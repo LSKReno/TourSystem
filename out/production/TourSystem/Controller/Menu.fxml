@@ -480,9 +480,9 @@
                         </JFXTextArea>
                         <Label fx:id="announcementTime1" layoutX="136.0" layoutY="97.0" prefHeight="22.0" prefWidth="134.0" />
                         <Label fx:id="announcementTime2" layoutX="136.0" layoutY="205.0" prefHeight="22.0" prefWidth="134.0" />
-                        <Label fx:id="announcementTime5" layoutX="128.0" layoutY="533.0" prefHeight="22.0" prefWidth="142.0" />
-                        <Label fx:id="announcementTime4" layoutX="123.0" layoutY="422.0" prefHeight="22.0" prefWidth="147.0" />
-                        <Label fx:id="announcementTime3" layoutX="128.0" layoutY="310.0" prefHeight="22.0" prefWidth="142.0" />
+                        <Label fx:id="announcementTime5" layoutX="138.0" layoutY="533.0" prefHeight="22.0" prefWidth="142.0" />
+                        <Label fx:id="announcementTime4" layoutX="136.0" layoutY="422.0" prefHeight="22.0" prefWidth="147.0" />
+                        <Label fx:id="announcementTime3" layoutX="132.0" layoutY="310.0" prefHeight="22.0" prefWidth="142.0" />
                      </children>
                   </AnchorPane>
             </content>
