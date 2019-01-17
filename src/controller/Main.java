@@ -15,7 +15,8 @@ public class Main extends Application {
 
     static private Stage primaryStage;
 
-    /**all the controller can call this method.
+    /**
+     * all the controller can call this method.
      * @return get the primaryStage.
      */
 
@@ -46,13 +47,6 @@ public class Main extends Application {
     }
 
 }
-
-
-
-
-
-
-
 
 
 
