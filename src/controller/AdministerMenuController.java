@@ -115,6 +115,11 @@ public class AdministerMenuController {
     @FXML
     private JFXTextField deleteEndScenicNameText;
 
+    @FXML
+    private AnchorPane announcementSuccessPane;
+
+    @FXML
+    private JFXButton notVisibleButton;
 
     /**界面初始化*/
     @FXML
@@ -178,7 +183,6 @@ public class AdministerMenuController {
         DeleteRoad deleteRoad = new DeleteRoad();
         String results = deleteRoad.deleteRoad(deleteRoadStartName, deleteRoadEndName);
         System.out.println(results);
-
     }
 
     /**发布公告通知*/
@@ -189,10 +193,14 @@ public class AdministerMenuController {
         AddAnnouncement addAnnouncement = new AddAnnouncement();
         String results = addAnnouncement.addAnnouncement(announcementContent);
 //        System.out.println(results);
-
-
+        announcementSuccessPane.setVisible(true);
     }
 
+    /**隐藏发布公告成功Pane*/
+    @FXML
+    void notVisible(ActionEvent event) {
+        announcementSuccessPane.setVisible(false);
+    }
 
 
 

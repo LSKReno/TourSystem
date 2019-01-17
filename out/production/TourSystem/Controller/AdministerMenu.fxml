@@ -233,6 +233,25 @@
                               <Font size="15.0" />
                            </font>
                         </JFXTextField>
+                        <AnchorPane fx:id="announcementSuccessPane" layoutX="262.0" layoutY="45.0" prefHeight="170.0" prefWidth="303.0" visible="false">
+                           <children>
+                              <ImageView fitHeight="173.0" fitWidth="329.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@announcement_success_bg.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="23.0" prefHeight="54.0" prefWidth="216.0" text="公告发布成功！" textFill="WHITE">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="notVisibleButton" buttonType="RAISED" layoutX="256.0" layoutY="133.0" onAction="#notVisible" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #fa5155;" text="返回">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
                      </children>
                   </AnchorPane>
                </content>
