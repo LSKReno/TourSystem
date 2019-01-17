@@ -29,7 +29,6 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Menu.fxml"));
         Scene scene = new Scene(root, 1122, 745);
         primaryStage.setScene(scene);
-//        scene.getStylesheets().add(this.getClass().getResource("Login.css").toExternalForm());
         primaryStage.show();
     }
 
