@@ -478,11 +478,11 @@
                               <Font size="14.0" />
                            </font>
                         </JFXTextArea>
-                        <Label fx:id="announcementTime1" layoutX="136.0" layoutY="97.0" prefHeight="22.0" prefWidth="134.0" />
-                        <Label fx:id="announcementTime2" layoutX="136.0" layoutY="205.0" prefHeight="22.0" prefWidth="134.0" />
-                        <Label fx:id="announcementTime5" layoutX="138.0" layoutY="533.0" prefHeight="22.0" prefWidth="142.0" />
-                        <Label fx:id="announcementTime4" layoutX="136.0" layoutY="422.0" prefHeight="22.0" prefWidth="147.0" />
-                        <Label fx:id="announcementTime3" layoutX="132.0" layoutY="310.0" prefHeight="22.0" prefWidth="142.0" />
+                        <Label fx:id="announcementTime1" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="97.0" prefHeight="22.0" prefWidth="207.0" />
+                        <Label fx:id="announcementTime2" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="205.0" prefHeight="22.0" prefWidth="212.0" />
+                        <Label fx:id="announcementTime5" alignment="CENTER" contentDisplay="CENTER" layoutX="78.0" layoutY="533.0" prefHeight="22.0" prefWidth="202.0" />
+                        <Label fx:id="announcementTime4" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="422.0" prefHeight="22.0" prefWidth="210.0" />
+                        <Label fx:id="announcementTime3" alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="310.0" prefHeight="22.0" prefWidth="208.0" />
                      </children>
                   </AnchorPane>
             </content>

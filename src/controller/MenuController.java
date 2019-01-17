@@ -10,6 +10,7 @@ import datastructure.Constants;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import datastructure.MyList;
 import javafx.collections.FXCollections;
@@ -319,28 +320,38 @@ public class MenuController {
         String announcement= showAnnouncement.ShowAnnouncement();
         JSONObject jsonGraph = JSON.parseObject(announcement);
         JSONArray announcementList = jsonGraph.getJSONArray("list");
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         for (int i=0;i<announcementList.size();i++){
             switch (i){
                 case 0:
                     announcement1.setText(announcementList.getJSONObject(i).getString("message"));
-                    announcementTime1.setText(announcementList.getJSONObject(i).getString("time"));
+                    long time1 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                    Date date1 = new Date(time1);
+                    announcementTime1.setText(String.valueOf(date1));
                     break;
                 case 1:
                     announcement2.setText(announcementList.getJSONObject(i).getString("message"));
-                    announcementTime2.setText(announcementList.getJSONObject(i).getString("time"));
+                    long time2 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                    Date date2 = new Date(time2);
+                    announcementTime2.setText(String.valueOf(date2));
                     break;
                 case 2:
                     announcement3.setText(announcementList.getJSONObject(i).getString("message"));
-                    announcementTime3.setText(announcementList.getJSONObject(i).getString("time"));
+                    long time3 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                    Date date3 = new Date(time3);
+                    announcementTime3.setText(String.valueOf(date3));
                     break;
                 case 3:
                     announcement4.setText(announcementList.getJSONObject(i).getString("message"));
-                    announcementTime4.setText(announcementList.getJSONObject(i).getString("time"));
+                    long time4 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                    Date date4 = new Date(time4);
+                    announcementTime4.setText(String.valueOf(date4));
                     break;
                 case 4:
                     announcement5.setText(announcementList.getJSONObject(i).getString("message"));
-                    announcementTime5.setText(announcementList.getJSONObject(i).getString("time"));
+                    long time5 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                    Date date5 = new Date(time5);
+                    announcementTime5.setText(String.valueOf(date5));
                     break;
                 default:
                     break;
