@@ -2,7 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31172f55-d845-44a8-8603-7520dd361daa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Announcement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Info.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Info景点原文件.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScenicGraph.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TourSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/Administer-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/AdministerMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/Login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/Menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/Menu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/background1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/scenicSpots-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/position.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/IO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/AnnouncementManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/CreateNewGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Kruskal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Parking.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Prim.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/ShortestPath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/Sort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/TourManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/TourMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Administer-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdministerMenu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AdministerMenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Login.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Menu.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/StageManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/background1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/login-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/scenicSpots-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Announcement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/AnnouncementContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/ArcNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/CarNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Critical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Graph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/MyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/MyQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/MyStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/VData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/VNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/AddAnnouncement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/AddNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/AddPark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/AddRoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/CreateGraph.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/CreatePark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/DeleteAnnouncement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/DeleteNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/DeletePark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/DeleteRoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/KruskalRoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/PrimRoad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/SearchNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/Shortest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/ShowAnnouncement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/SortArc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/TourMaps.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +116,7 @@
     <session id="148834848">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -64,54 +140,14 @@
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="187" />
           <entry key="JSON" value="7" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="PLAIN_TEXT" value="26" />
           <entry key="XML" value="21" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="597" column="64" lean-forward="true" selection-start-line="597" selection-start-column="64" selection-end-line="597" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#24123#24124#0" expanded="true" />
-                <element signature="e#24171#24172#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="50" column="33" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#back#0;class#LoginController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -193,7 +229,7 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -230,7 +266,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547689736343" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547689820218" />
     <property name="last_opened_file_path" value="D:/Vehicle Hiring System" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -350,7 +386,7 @@
       <workItem from="1547564057725" duration="64000" />
       <workItem from="1547599256648" duration="25842000" />
       <workItem from="1547631625433" duration="13775000" />
-      <workItem from="1547689521653" duration="297000" />
+      <workItem from="1547689521653" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -377,13 +413,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109196000" />
+    <option name="totallyTimeSpent" value="109568000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.2141927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.2141927" />
       <window_info id="Structure" order="1" sideWeight="0.5043328" side_tool="true" weight="0.203125" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -722,9 +757,6 @@
     <entry file="file://$PROJECT_DIR$/Info.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Login.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -761,6 +793,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
