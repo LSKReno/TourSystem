@@ -318,46 +318,55 @@ public class MenuController {
         // 初始化加载公告
         ShowAnnouncement showAnnouncement = new ShowAnnouncement();
         String announcement= showAnnouncement.ShowAnnouncement();
-        JSONObject jsonGraph = JSON.parseObject(announcement);
-        JSONArray announcementList = jsonGraph.getJSONArray("list");
-        DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
-        for (int i=0;i<announcementList.size();i++){
-            switch (i){
-                case 0:
-                    announcement1.setText(announcementList.getJSONObject(i).getString("message"));
-                    long time1 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
-                    Date date1 = new Date(time1);
-                    announcementTime1.setText(String.valueOf(date1));
-                    break;
-                case 1:
-                    announcement2.setText(announcementList.getJSONObject(i).getString("message"));
-                    long time2 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
-                    Date date2 = new Date(time2);
-                    announcementTime2.setText(String.valueOf(date2));
-                    break;
-                case 2:
-                    announcement3.setText(announcementList.getJSONObject(i).getString("message"));
-                    long time3 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
-                    Date date3 = new Date(time3);
-                    announcementTime3.setText(String.valueOf(date3));
-                    break;
-                case 3:
-                    announcement4.setText(announcementList.getJSONObject(i).getString("message"));
-                    long time4 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
-                    Date date4 = new Date(time4);
-                    announcementTime4.setText(String.valueOf(date4));
-                    break;
-                case 4:
-                    announcement5.setText(announcementList.getJSONObject(i).getString("message"));
-                    long time5 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
-                    Date date5 = new Date(time5);
-                    announcementTime5.setText(String.valueOf(date5));
-                    break;
-                default:
-                    break;
-            }
-
+//        System.out.println(announcement);
+        if (announcement.equals("no Announcement.txt file")){
+            announcement1.setText("当前无公告, 请插播。");
         }
+        else if (JSON.parseObject(announcement).getJSONArray("list").size()==0){
+            announcement1.setText("当前无公告, 请插播。");
+        }
+        else{
+            JSONObject jsonAnnouncement = JSON.parseObject(announcement);
+            JSONArray announcementList = jsonAnnouncement.getJSONArray("list");
+            for (int i=0;i<announcementList.size();i++){
+                switch (i){
+                    case 0:
+                        announcement1.setText(announcementList.getJSONObject(i).getString("message"));
+                        long time1 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                        Date date1 = new Date(time1);
+                        announcementTime1.setText(String.valueOf(date1));
+                        break;
+                    case 1:
+                        announcement2.setText(announcementList.getJSONObject(i).getString("message"));
+                        long time2 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                        Date date2 = new Date(time2);
+                        announcementTime2.setText(String.valueOf(date2));
+                        break;
+                    case 2:
+                        announcement3.setText(announcementList.getJSONObject(i).getString("message"));
+                        long time3 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                        Date date3 = new Date(time3);
+                        announcementTime3.setText(String.valueOf(date3));
+                        break;
+                    case 3:
+                        announcement4.setText(announcementList.getJSONObject(i).getString("message"));
+                        long time4 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                        Date date4 = new Date(time4);
+                        announcementTime4.setText(String.valueOf(date4));
+                        break;
+                    case 4:
+                        announcement5.setText(announcementList.getJSONObject(i).getString("message"));
+                        long time5 = Long.parseLong(announcementList.getJSONObject(i).getString("time"));
+                        Date date5 = new Date(time5);
+                        announcementTime5.setText(String.valueOf(date5));
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+        }
+
     }
 
     /**输出景区景点分布图*/

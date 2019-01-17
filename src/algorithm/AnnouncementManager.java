@@ -14,7 +14,7 @@ public class AnnouncementManager {
     public String addAnnouncement(String message) {
         //当前发布的消息过多
         if (AnnouncementContainer.getMessageList().getSize() >= 5) {
-            deleteAnnouncement(1);
+            deleteAnnouncement(2);
         }
         Announcement announcement = new Announcement(message, new Date());
         AnnouncementContainer.getMessageList().add(announcement);
@@ -42,7 +42,13 @@ public class AnnouncementManager {
     public String showAnnouncement() throws IOException{
         if(AnnouncementContainer.getMessageList().getSize() == 0){
             File file = new File("D:\\TourSystem\\TourSystem\\Announcement.txt");
-            Scanner reader = new Scanner(file);
+            Scanner reader;
+            try{
+                reader = new Scanner(file);
+            }catch (FileNotFoundException e){
+                return "no Announcement.txt file";
+            }
+
             while (reader.hasNext()) {
                 String time = reader.nextLine();
                 String message = reader.nextLine();

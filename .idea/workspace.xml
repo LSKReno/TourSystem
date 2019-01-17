@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="31172f55-d845-44a8-8603-7520dd361daa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TourSystem/Controller/Menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Announcement.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/AnnouncementManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/AnnouncementManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,7 +58,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6918" />
+          <entry key="JAVA" value="7080" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="87" />
           <entry key="XML" value="70" />
@@ -67,9 +67,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="189" />
+          <entry key="JAVA" value="195" />
           <entry key="JSON" value="7" />
-          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="PLAIN_TEXT" value="33" />
           <entry key="XML" value="20" />
         </counts>
       </usages-collector>
@@ -77,11 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="533">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,27 +89,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6460">
-              <caret line="345" column="56" selection-start-line="345" selection-start-column="56" selection-end-line="345" selection-end-column="56" />
+            <state relative-caret-position="198">
+              <caret line="328" selection-start-line="328" selection-end-line="328" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/AdministerMenuController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4000">
-              <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5942#5943#0" expanded="true" />
-                <element signature="e#5972#5973#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/controller/StageManager.java" />
         <option value="$PROJECT_DIR$/src/controller/ScenicSpotController.java" />
         <option value="$PROJECT_DIR$/src/algorithm/AnnouncementManage.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/AnnouncementManager.java" />
         <option value="$PROJECT_DIR$/src/algorithm/TourManagement.java" />
         <option value="$PROJECT_DIR$/src/methods/AddNode.java" />
         <option value="$PROJECT_DIR$/src/methods/AddRoad.java" />
@@ -178,9 +163,10 @@
         <option value="$PROJECT_DIR$/src/algorithm/Parking.java" />
         <option value="$PROJECT_DIR$/src/methods/DeleteNode.java" />
         <option value="$PROJECT_DIR$/src/methods/DeleteRoad.java" />
-        <option value="$PROJECT_DIR$/Announcement.txt" />
         <option value="$PROJECT_DIR$/src/controller/AdministerMenuController.java" />
         <option value="$PROJECT_DIR$/src/controller/MenuController1.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/AnnouncementManager.java" />
+        <option value="$PROJECT_DIR$/Announcement.txt" />
         <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
       </list>
     </option>
@@ -233,12 +219,6 @@
               <item name="TourSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TourSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TourSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -248,7 +228,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547697334796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547709212795" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -262,6 +242,7 @@
       <recent name="Controlller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TourSystem\TourSystem\src" />
       <recent name="D:\TourSystem\TourSystem\src\controller" />
       <recent name="D:\TourSystem\src\Controlller" />
       <recent name="D:\TourSystem\src" />
@@ -370,7 +351,7 @@
       <workItem from="1547631625433" duration="13775000" />
       <workItem from="1547691520131" duration="1014000" />
       <workItem from="1547695445947" duration="1892000" />
-      <workItem from="1547703904190" duration="249000" />
+      <workItem from="1547703904190" duration="3016000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -397,7 +378,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111984000" />
+    <option name="totallyTimeSpent" value="114751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
@@ -413,7 +394,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.68679774" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2963483" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,31 +428,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="announcement update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/algorithm/Prim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1168">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/Kruskal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1128">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IO/IO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
           <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/methods/ShowAnnouncement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -487,13 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/methods/AddAnnouncement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -580,13 +533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
           <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/AnnouncementManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -687,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/MyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="111" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/methods/AddRoad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -738,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Announcement.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/time/LocalTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -753,20 +685,20 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MenuController1.java" />
-    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Announcement.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Scanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="81">
+          <caret line="637" column="52" lean-forward="true" selection-start-line="637" selection-start-column="52" selection-end-line="637" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6460">
-          <caret line="345" column="56" selection-start-line="345" selection-start-column="56" selection-end-line="345" selection-end-column="56" />
+        <state relative-caret-position="533">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -775,12 +707,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/AdministerMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4000">
-          <caret line="217" column="32" selection-start-line="217" selection-start-column="32" selection-end-line="217" selection-end-column="32" />
+        <state relative-caret-position="57">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5942#5943#0" expanded="true" />
             <element signature="e#5972#5973#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Announcement.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/AnnouncementManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/methods/AddAnnouncement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastructure/MyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/methods/ShowAnnouncement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
