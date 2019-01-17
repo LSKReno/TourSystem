@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31172f55-d845-44a8-8603-7520dd361daa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Announcement.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Announcement.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScenicGraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/ScenicGraph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Menu.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/MenuController1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +55,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6782" />
+          <entry key="JAVA" value="6783" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="87" />
           <entry key="XML" value="70" />
@@ -66,7 +64,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="188" />
+          <entry key="JAVA" value="190" />
           <entry key="JSON" value="7" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="XML" value="21" />
@@ -79,10 +77,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="90">
+              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="327" column="46" selection-start-line="327" selection-start-column="46" selection-end-line="327" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#24123#24124#0" expanded="true" />
+                <element signature="e#24171#24172#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,7 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/controller/ScenicSearchAndSortController.java" />
         <option value="$PROJECT_DIR$/src/methods/createScenicGraph.java" />
         <option value="$PROJECT_DIR$/src/methods/createParking.java" />
         <option value="$PROJECT_DIR$/src/methods/addNode.java" />
@@ -152,9 +163,10 @@
         <option value="$PROJECT_DIR$/src/controller/lsk.fxml" />
         <option value="$PROJECT_DIR$/src/algorithm/Parking.java" />
         <option value="$PROJECT_DIR$/src/methods/DeleteNode.java" />
-        <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/src/methods/DeleteRoad.java" />
         <option value="$PROJECT_DIR$/src/controller/AdministerMenuController.java" />
+        <option value="$PROJECT_DIR$/src/controller/MenuController1.java" />
+        <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
       </list>
     </option>
   </component>
@@ -207,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547690752278" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547691158159" />
     <property name="last_opened_file_path" value="D:/Vehicle Hiring System" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -328,7 +340,7 @@
       <workItem from="1547599256648" duration="25842000" />
       <workItem from="1547631625433" duration="13775000" />
       <workItem from="1547689521653" duration="669000" />
-      <workItem from="1547690220547" duration="531000" />
+      <workItem from="1547690220547" duration="799000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -355,13 +367,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110099000" />
+    <option name="totallyTimeSpent" value="110367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.2141927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.2141927" />
       <window_info id="Structure" order="1" sideWeight="0.5043328" side_tool="true" weight="0.203125" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -371,7 +383,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.375" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.375" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -405,13 +417,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="announcement update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/algorithm/Prim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1168">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/Kruskal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1128">
@@ -715,10 +720,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MenuController1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="1007" column="18" lean-forward="true" selection-start-line="1007" selection-start-column="18" selection-end-line="1007" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="597" column="64" lean-forward="true" selection-start-line="597" selection-start-column="64" selection-end-line="597" selection-end-column="64" />
+        <state relative-caret-position="280">
+          <caret line="327" column="46" selection-start-line="327" selection-start-column="46" selection-end-line="327" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#24123#24124#0" expanded="true" />
@@ -727,13 +742,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="90">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
