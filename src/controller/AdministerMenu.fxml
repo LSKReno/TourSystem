@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdministerMenuController">
+   <children>
+      <ImageView fitHeight="540.0" fitWidth="820.0" pickOnBounds="true">
+         <image>
+            <Image url="@Administer-bg.jpg" />
+         </image></ImageView>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="89.0" prefWidth="691.0" text="Administer Mode">
+         <font>
+            <Font name="Agency FB" size="71.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="exitButton" buttonType="RAISED" layoutX="697.0" layoutY="485.0" onAction="#exit" prefHeight="40.0" prefWidth="103.0" style="-fx-background-color: #fa5155;" text="Exit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="backToMenuButton" buttonType="RAISED" layoutX="18.0" layoutY="484.0" onAction="#backToMenu" prefHeight="40.0" prefWidth="208.0" style="-fx-background-color: #fa5155;" text="返回菜单(退出管理员模式)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTabPane layoutX="-7.0" layoutY="124.0" prefHeight="358.0" prefWidth="826.0">
+         <tabs>
+            <Tab fx:id="insertScenicSpotTAB" style="-fx-background-color: #6e72ef;" text="Insert Scenic Spot  ">
+               <content>
+                  <AnchorPane fx:id="insertScenicSpotPane" minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="806.0">
+                     <children>
+                        <JFXButton fx:id="insertScenicSpotButton" buttonType="RAISED" layoutX="613.0" layoutY="258.0" onAction="#insertScenicSpot" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #fa5155;" text="景点的插入">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="36.0" layoutY="17.0" prefHeight="40.0" prefWidth="122.0" text="景点的名称:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="104.0" prefHeight="40.0" prefWidth="154.0" text="景点有无休息区：" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="53.0" prefHeight="40.0" prefWidth="165.0" text="景点的受欢迎度:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="154.0" prefHeight="40.0" prefWidth="154.0" text="景点有无公厕：" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="203.0" prefHeight="40.0" prefWidth="154.0" text="景点的描述：" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="addScenicNameText" labelFloat="true" layoutX="224.0" layoutY="17.0" prefHeight="32.0" prefWidth="270.0" promptText="插入景点的名称" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="addScenicDesText" labelFloat="true" layoutX="224.0" layoutY="207.0" prefHeight="32.0" prefWidth="422.0" promptText="插入景点的描述" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="addScenicPopText" labelFloat="true" layoutX="224.0" layoutY="56.0" prefHeight="32.0" prefWidth="270.0" promptText="插入景点的受欢迎度" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="addScenicHasRestComboBox" labelFloat="true" layoutX="224.0" layoutY="108.0" prefHeight="32.0" prefWidth="272.0" promptText="插入景点有无休息区" style="-fx-background-color: #ccd7ff;" />
+                        <JFXComboBox fx:id="addScenicHasToiletComboBox" labelFloat="true" layoutX="224.0" layoutY="158.0" prefHeight="32.0" prefWidth="272.0" promptText="插入景点有无公厕" style="-fx-background-color: #ccd7ff;" />
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="deleteScenicSpotTAB" style="-fx-background-color: #6e72ef;" text="Delete Scenic Spot   ">
+               <content>
+                  <AnchorPane fx:id="deleteScenicSpotPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="deleteScenicSpotButton" buttonType="RAISED" layoutX="613.0" layoutY="261.0" onAction="#deleteScenicSpot" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #fa5155;" text="景点的删除">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="47.0" layoutY="34.0" prefHeight="40.0" prefWidth="122.0" text="景点的名称:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="deleteScenicNameText" labelFloat="true" layoutX="234.0" layoutY="31.0" prefHeight="32.0" prefWidth="270.0" promptText="删除景点的名称">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label layoutX="47.0" layoutY="86.0" prefHeight="40.0" prefWidth="122.0" text="景点的索引:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="deleteScenicIndexText" labelFloat="true" layoutX="234.0" layoutY="90.0" prefHeight="32.0" prefWidth="270.0" promptText="删除景点的索引">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="insertRoadTAB" style="-fx-background-color: #6e72ef;" text="Inert Road ">
+               <content>
+                  <AnchorPane fx:id="shortestPathPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="inertRoadButton" buttonType="RAISED" layoutX="613.0" layoutY="254.0" onAction="#inertRoad" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #fa5155;" text="路的插入">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="65.0" layoutY="17.0" prefHeight="40.0" prefWidth="122.0" text="起始景点的名称:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="147.0" prefHeight="40.0" prefWidth="122.0" text="所需时间:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="107.0" prefHeight="40.0" prefWidth="122.0" text="路长:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="65.0" layoutY="65.0" prefHeight="40.0" prefWidth="122.0" text="终止景点的名称:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="addStartScenicNameText" labelFloat="true" layoutX="244.0" layoutY="21.0" prefHeight="32.0" prefWidth="270.0" promptText="请输入起始景点的名称">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="addDisText" labelFloat="true" layoutX="244.0" layoutY="111.0" prefHeight="32.0" prefWidth="270.0" promptText="请输入路长">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="addEndScenicNameText" labelFloat="true" layoutX="244.0" layoutY="69.0" prefHeight="32.0" prefWidth="270.0" promptText="请输入终止景点的名称">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="addTimeText" labelFloat="true" layoutX="244.0" layoutY="151.0" prefHeight="32.0" prefWidth="270.0" promptText="请输入所需时间">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="deleteRoadTAB" style="-fx-background-color: #6e72ef;" text="Delete Road  ">
+               <content>
+                  <AnchorPane fx:id="deleteRoadPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="deleteRoadButton" buttonType="RAISED" layoutX="613.0" layoutY="249.0" onAction="#deleteRoad" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #fa5155;" text="路的删除">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="75.0" layoutY="27.0" prefHeight="40.0" prefWidth="122.0" text="起始景点的名称:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="95.0" prefHeight="40.0" prefWidth="122.0" text="终止景点的名称:" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="deleteStartScenicNameText1" labelFloat="true" layoutX="254.0" layoutY="31.0" prefHeight="32.0" prefWidth="270.0" promptText="请输入起始景点的名称">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="deleteEndScenicNameText1" labelFloat="true" layoutX="254.0" layoutY="99.0" prefHeight="32.0" prefWidth="270.0" promptText="请输入终止景点的名称">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="searchAndSortTAB" style="-fx-background-color: #6e72ef;" text="Publish Announcement   ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="303.0" prefWidth="751.0">
+                     <children>
+                        <JFXButton fx:id="publishAnnouncementButton" buttonType="RAISED" layoutX="613.0" layoutY="261.0" onAction="#publishAnnouncement" prefHeight="50.0" prefWidth="178.0" style="-fx-background-color: #fa5155;" text="发布-通知通告">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="82.0" layoutY="26.0" prefHeight="40.0" prefWidth="195.0" text="公告发布时间选择：">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <JFXTimePicker fx:id="announceTimePicker" defaultColor="#6368ea" layoutX="304.0" layoutY="25.0" prefHeight="40.0" prefWidth="256.0" />
+                        <Label layoutX="82.0" layoutY="105.0" prefHeight="40.0" prefWidth="129.0" text="公告内容：">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="announcementContentText" labelFloat="true" layoutX="211.0" layoutY="99.0" prefHeight="40.0" prefWidth="558.0" promptText="请输入公告发布内容">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

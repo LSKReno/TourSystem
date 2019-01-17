@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="746.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+<children>
+      <ImageView fitHeight="745.0" fitWidth="1309.0" layoutX="1.0" layoutY="-1.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="215.0" layoutY="6.0" prefHeight="89.0" prefWidth="691.0" text="阿尔卑斯景区欢迎您">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="administerButton" buttonType="RAISED" layoutY="19.0" onAction="#administer" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #fa5155;" text="管理员登陆" />
+      <JFXButton fx:id="exitButton" buttonType="RAISED" layoutX="1024.0" layoutY="19.0" onAction="#exit" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #fa5155;" text="Exit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTabPane layoutX="-5.0" layoutY="108.0" prefHeight="638.0" prefWidth="823.0" style="-fx-border-color: #6e72ef;">
+         <tabs>
+          <Tab fx:id="scenicSpotsMapTAB" style="-fx-background-color: #6e72ef;" text="Scenic Spots Map">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="810.0">
+                     <children>
+                        <Label fx:id="scenicSpotsMapLabel" layoutX="27.0" layoutY="134.0" prefHeight="301.0" prefWidth="667.0" text="Label">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="guideRouteMapTAB" style="-fx-background-color: #6e72ef;" text="Guide Route Map">
+            <content>
+              <AnchorPane fx:id="guideRoutePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="guideRouteMapButton" buttonType="RAISED" layoutX="592.0" layoutY="479.0" onAction="#OutputGuideRouteMap" prefHeight="50.0" prefWidth="199.0" style="-fx-background-color: #fa5155;" text="输出导游线路图">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="88.0" layoutY="122.0" prefHeight="50.0" prefWidth="154.0" text="起始点名称：">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="startNameGuideRouteText" labelFloat="true" layoutX="248.0" layoutY="129.0" prefHeight="32.0" prefWidth="254.0" promptText="请输入始发地点" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label layoutX="88.0" layoutY="201.0" prefHeight="50.0" prefWidth="154.0" text="终点名称：">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="endNameGuideRouteText" labelFloat="true" layoutX="248.0" layoutY="209.0" prefHeight="32.0" prefWidth="254.0" promptText="请输入终点" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label layoutX="88.0" layoutY="276.0" prefHeight="50.0" prefWidth="154.0" text="导游路线算法：">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="guideRouteComboBox" labelFloat="true" layoutX="248.0" layoutY="285.0" prefHeight="32.0" prefWidth="238.0" promptText="请选择导游路线算法" style="-fx-background-color: #ccd7ff;" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="596.0" layoutY="73.0" prefHeight="32.0" prefWidth="138.0" text="导游路线图">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="guideRouteMapLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="127.0" prefHeight="257.0" prefWidth="292.0" text="我是导游路线图">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="509.0" layoutY="400.0" prefHeight="26.0" prefWidth="90.0" text="路线总距离：">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="guideRouteDisLabel" contentDisplay="CENTER" layoutX="617.0" layoutY="401.0" prefHeight="26.0" prefWidth="83.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="227.0" layoutY="23.0" prefHeight="58.0" prefWidth="332.0" text="导游路线图">
+                           <font>
+                              <Font name="Arial" size="27.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="shortestPathTAB" style="-fx-background-color: #6e72ef;" text="Shortest Path">
+               <content>
+                  <AnchorPane fx:id="shortestPathPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="shortestPathButton" buttonType="RAISED" layoutX="547.0" layoutY="484.0" onAction="#shortestPath" prefHeight="50.0" prefWidth="257.0" style="-fx-background-color: #fa5155;" text="计算最短路径和最短距离">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label layoutX="78.0" layoutY="117.0" prefHeight="50.0" prefWidth="154.0" text="起始点名称：">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="187.0" prefHeight="50.0" prefWidth="154.0" text="终点名称：">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="startNameText" labelFloat="true" layoutX="238.0" layoutY="127.0" prefHeight="32.0" prefWidth="254.0" promptText="请输入始发地点" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="endNameText" labelFloat="true" layoutX="238.0" layoutY="194.0" prefHeight="32.0" prefWidth="254.0" promptText="请输入终点" style="-fx-background-color: #ccd7ff;">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="shortestPathComboBox" labelFloat="true" layoutX="238.0" layoutY="276.0" prefHeight="32.0" prefWidth="238.0" promptText="请选择最短路径算法" style="-fx-background-color: #ccd7ff;" />
+                        <Label layoutX="78.0" layoutY="267.0" prefHeight="50.0" prefWidth="154.0" text="最短路径算法：">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="606.0" layoutY="94.0" prefHeight="32.0" prefWidth="138.0" text="最短路线图">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shortestPathMapLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="562.0" layoutY="137.0" prefHeight="244.0" prefWidth="213.0" text="我是路线图">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label contentDisplay="CENTER" layoutX="505.0" layoutY="425.0" prefHeight="26.0" prefWidth="83.0" text="最短距离：">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="shortestDisLabel" contentDisplay="CENTER" layoutX="607.0" layoutY="425.0" prefHeight="26.0" prefWidth="83.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="237.0" layoutY="33.0" prefHeight="58.0" prefWidth="332.0" text="最短路径及距离测算">
+                           <font>
+                              <Font name="Arial" size="27.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #6e72ef;" text="Parking Records">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="parkingButton" buttonType="RAISED" layoutX="522.0" layoutY="471.0" onAction="#parking" prefHeight="50.0" prefWidth="299.0" style="-fx-background-color: #fa5155;" text="停车场车辆进出记录信息">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXButton>
+                        <Label alignment="CENTER" layoutX="337.0" layoutY="14.0" prefHeight="42.0" prefWidth="146.0" text="车辆进入">
+                           <font>
+                              <Font name="Arial" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="78.0" prefHeight="32.0" prefWidth="147.0" text="进入车辆的车牌号：">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="addCarNumberText" labelFloat="true" layoutX="247.0" layoutY="74.0" prefHeight="32.0" prefWidth="233.0" promptText="请输入进入车辆的车牌号">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="carInButton" buttonType="RAISED" layoutX="632.0" layoutY="108.0" onAction="#carIn" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #fa5155;" text="车辆进入">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="carParkingInfoLabel" layoutX="66.0" layoutY="157.0" prefHeight="32.0" prefWidth="727.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="218.0" prefHeight="32.0" prefWidth="147.0" text="删除车辆的车牌号：">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="deleteCarNumberText" labelFloat="true" layoutX="249.0" layoutY="218.0" prefHeight="32.0" prefWidth="233.0" promptText="请输入删除车辆的车牌号">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="carOutButton" buttonType="RAISED" layoutX="632.0" layoutY="262.0" onAction="#carOut" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #fa5155;" text="车辆退出">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="carOutInfoLabel" layoutX="66.0" layoutY="312.0" prefHeight="42.0" prefWidth="704.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="searchAndSortTAB" style="-fx-background-color: #6e72ef;" text="Search And Sort           ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="303.0" prefWidth="751.0">
+                     <children>
+                        <AnchorPane fx:id="searchAndSortPane" layoutX="3.0" layoutY="4.0" prefHeight="596.0" prefWidth="814.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="177.0" layoutY="1.0" prefHeight="58.0" prefWidth="451.0" text="景点自助查询与排序">
+                                 <font>
+                                    <Font name="Arial Black" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="44.0" layoutY="72.0" prefHeight="36.0" prefWidth="125.0" text="景点查询：">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="KMPSearchButton" buttonType="RAISED" layoutX="484.0" layoutY="121.0" onAction="#KMPSearch" prefHeight="40.0" prefWidth="103.0" style="-fx-background-color: #fa5155;" text="KMP查询">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label alignment="CENTER" layoutX="44.0" layoutY="298.0" prefHeight="36.0" prefWidth="125.0" text="景点排序：">
+                                 <font>
+                                    <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <JFXButton fx:id="BoyerMooreSearchButton" buttonType="RAISED" layoutX="620.0" layoutY="120.0" onAction="#BoyerMooreSearch" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: #fa5155;" text="Boyer-Moore查询">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="roadNumSortButton" buttonType="RAISED" layoutX="639.0" layoutY="300.0" onAction="#roadNumSort" prefHeight="40.0" prefWidth="174.0" style="-fx-background-color: #fa5155;" text="按景点的路口数排序">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="popularitySortButton" buttonType="RAISED" layoutX="483.0" layoutY="300.0" onAction="#popularitySort" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: #fa5155;" text="按受欢迎度排序">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton fx:id="backToMenuButton" buttonType="RAISED" layoutX="25.0" layoutY="491.0" onAction="#backToMenu" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: #fa5155;" text="返回菜单">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXComboBox fx:id="sortAlgorithmComboBox" labelFloat="true" layoutX="177.0" layoutY="300.0" prefHeight="32.0" prefWidth="238.0" promptText="排序算法选择" style="-fx-background-color: #fa5155;" />
+                              <JFXTextField fx:id="searchText" labelFloat="true" layoutX="177.0" layoutY="70.0" prefHeight="39.0" prefWidth="300.0" promptText="请输入关键字">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </JFXTextField>
+                              <Label fx:id="sortLabel1" layoutX="25.0" layoutY="350.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel4" layoutX="470.0" layoutY="350.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel7" layoutX="195.0" layoutY="392.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel10" layoutX="628.0" layoutY="392.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel3" layoutX="333.0" layoutY="350.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel2" layoutX="195.0" layoutY="350.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel9" layoutX="470.0" layoutY="392.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel6" layoutX="25.0" layoutY="392.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel5" layoutX="628.0" layoutY="350.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel12" layoutX="195.0" layoutY="440.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel11" layoutX="25.0" layoutY="440.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel8" layoutX="333.0" layoutY="392.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel13" layoutX="350.0" layoutY="440.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel14" layoutX="493.0" layoutY="440.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortLabel15" layoutX="628.0" layoutY="440.0" prefHeight="32.0" prefWidth="105.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sortTypeLabel" layoutX="10.0" layoutY="327.0" prefHeight="22.0" prefWidth="198.0" />
+                              <JFXButton fx:id="searchButton1" layoutX="37.0" layoutY="162.0" onAction="#searchedScenic1" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton11" layoutX="37.0" layoutY="235.0" onAction="#searchedScenic11" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton6" layoutX="37.0" layoutY="197.0" onAction="#searchedScenic6" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton7" layoutX="186.0" layoutY="197.0" onAction="#searchedScenic7" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton5" layoutX="629.0" layoutY="162.0" onAction="#searchedScenic5" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton4" layoutX="471.0" layoutY="162.0" onAction="#searchedScenic4" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton3" layoutX="327.0" layoutY="162.0" onAction="#searchedScenic3" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton2" layoutX="186.0" layoutY="162.0" onAction="#searchedScenic2" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton10" layoutX="629.0" layoutY="197.0" onAction="#searchedScenic10" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton9" layoutX="471.0" layoutY="197.0" onAction="#searchedScenic9" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton13" layoutX="327.0" layoutY="235.0" onAction="#searchedScenic13" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton12" layoutX="186.0" layoutY="235.0" onAction="#searchedScenic12" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton8" layoutX="327.0" layoutY="197.0" onAction="#searchedScenic8" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton15" layoutX="629.0" layoutY="235.0" onAction="#searchedScenic15" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <JFXButton fx:id="searchButton14" layoutX="471.0" layoutY="235.0" onAction="#searchedScenic14" prefHeight="32.0" prefWidth="102.0" visible="false" />
+                              <AnchorPane fx:id="scenicInfoPane" layoutX="156.0" layoutY="67.0" prefHeight="400.0" prefWidth="600.0" visible="false">
+                                 <children>
+                                    <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@scenicSpots-bg.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label fx:id="scenicNameLabel" alignment="CENTER" layoutX="197.0" layoutY="14.0" prefHeight="58.0" prefWidth="205.0" text="我是景点名称" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="46.0" layoutY="68.0" prefHeight="40.0" prefWidth="137.0" text="景点受欢迎度：" textFill="#fffafa">
+                                       <font>
+                                          <Font name="Arial" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="popularityLabel" layoutX="194.0" layoutY="71.0" prefHeight="34.0" prefWidth="113.0" text="我是欢迎度" textFill="RED">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="46.0" layoutY="99.0" prefHeight="40.0" prefWidth="121.0" text="景点休息区：" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="46.0" layoutY="133.0" prefHeight="40.0" prefWidth="99.0" text="景点公厕：" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="hasRestLabel" layoutX="193.0" layoutY="102.0" prefHeight="34.0" prefWidth="113.0" text="我是休息区" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="hasToiletLabel" layoutX="194.0" layoutY="136.0" prefHeight="34.0" prefWidth="113.0" text="我是公厕" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="46.0" layoutY="199.0" prefHeight="40.0" prefWidth="114.0" text="景点描述：" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="desLabel" alignment="TOP_LEFT" layoutX="184.0" layoutY="212.0" prefHeight="155.0" prefWidth="368.0" text="我是景点描述" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="45.0" layoutY="166.0" prefHeight="40.0" prefWidth="99.0" text="景点周边：" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="surroundLabel" layoutX="170.0" layoutY="169.0" prefHeight="34.0" prefWidth="420.0" text="我是周边" textFill="WHITE">
+                                       <font>
+                                          <Font name="Arial" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXButton fx:id="backToSearchAndSortButton" buttonType="RAISED" layoutX="484.0" layoutY="353.0" onAction="#notVisible" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #fa5155;" text="返回">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <JFXTabPane layoutX="818.0" layoutY="108.0" prefHeight="602.0" prefWidth="303.0">
+         <tabs>
+          <Tab style="-fx-background-color: #6e72ef;" text="               Announcement                ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="447.0" prefWidth="266.0">
+                     <children>
+                        <JFXTextArea fx:id="announcement1" layoutX="22.0" layoutY="20.0" prefHeight="96.0" prefWidth="258.0" text="&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXTextArea fx:id="announcement2" layoutX="22.0" layoutY="132.0" prefHeight="96.0" prefWidth="258.0" text="&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXTextArea fx:id="announcement3" layoutX="22.0" layoutY="237.0" prefHeight="96.0" prefWidth="258.0" text="&#10;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXTextArea fx:id="announcement5" layoutX="22.0" layoutY="460.0" prefHeight="96.0" prefWidth="258.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXTextArea fx:id="announcement4" layoutX="22.0" layoutY="349.0" prefHeight="96.0" prefWidth="258.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextArea>
+                        <Label fx:id="announcementTime1" layoutX="136.0" layoutY="97.0" prefHeight="22.0" prefWidth="134.0" />
+                        <Label fx:id="announcementTime2" layoutX="136.0" layoutY="205.0" prefHeight="22.0" prefWidth="134.0" />
+                        <Label fx:id="announcementTime5" layoutX="128.0" layoutY="533.0" prefHeight="22.0" prefWidth="142.0" />
+                        <Label fx:id="announcementTime4" layoutX="123.0" layoutY="422.0" prefHeight="22.0" prefWidth="147.0" />
+                        <Label fx:id="announcementTime3" layoutX="128.0" layoutY="310.0" prefHeight="22.0" prefWidth="142.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+         </tabs>
+      </JFXTabPane>
+</children>
+</AnchorPane>
