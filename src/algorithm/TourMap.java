@@ -17,6 +17,12 @@ public class TourMap {
 	private int length;
 	int count=0;
 
+    public TourMap(Graph graph) {
+        this.graph = graph;
+        directGraph = new Graph(graph.getArcNum());
+        visited = new boolean[graph.getArcNum()];
+        tourIndexList = new ArrayList<>();
+    }
 	public List<Integer> bdfsplus(String start,String end){
 		clear();
 		// 获得起始节点索引
@@ -180,12 +186,6 @@ public class TourMap {
 		endIndex= -1;
 	}
 
-	public TourMap(Graph graph) {
-		this.graph = graph;
-		directGraph = new Graph(graph.getArcNum());
-		visited = new boolean[graph.getArcNum()];
-		tourIndexList = new ArrayList<>();
-	}
 
 	//利用深度遍历得到旅游路线图
 	public List<Integer> DFS(String start, String end){
@@ -247,11 +247,11 @@ public class TourMap {
 		int[] path = new int[graph.getArcNum()+1];       //记录哈密顿路径
 		for(int i = 0;i < graph.getArcNum();i++) {
 			visited[i] = false;     //初始化，所有顶点均未被遍历
-			path[i] = -1;        //初始化，未选中起点及到达任何顶点
+			path[i] = -1;          //初始化，未选中起点及到达任何顶点
 		}
 		visited[startIndex] = true;
 		visited[endIndex] = true;  //防止终点被提前访问
-		path[0] = startIndex;             //表示哈密顿起点为第0个顶点
+		path[0] = startIndex;      //表示哈密顿起点为第0个顶点
 		dfs(path, 1, startIndex == endIndex);     //从第0个顶点开始进行深度优先遍历,如果存在哈密顿路径，输出一条路径，否则无输出
 		boolean haspath = true;
 
@@ -452,8 +452,9 @@ public class TourMap {
 		int [] a = {1,4,7,3,9,10,11};
 		boolean judge = true;
 		for(int i = 0; i<a.length ; i++){
-			if(a[i]!=path[i])
-				judge =false;
+			if(a[i]!=path[i]) {
+                judge = false;
+            }
 		}
 		return  judge;
 	}

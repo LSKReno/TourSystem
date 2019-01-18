@@ -313,7 +313,7 @@ public class MenuController {
 
         JFXComboBox guideRouteBox = (JFXComboBox) guideRoutePane.lookup("#guideRouteComboBox");
         ObservableList<String> guideRouteList = FXCollections.observableArrayList("Hamilton", "DFS",
-                "Euler", "bdfs plus");
+                "Euler", "BDFS plus");
         guideRouteBox.setItems(guideRouteList);
 
         // 初始化加载公告

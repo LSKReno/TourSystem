@@ -228,11 +228,16 @@
                               <Font size="15.0" />
                            </font>
                         </JFXButton>
-                        <JFXTextArea fx:id="roadPlanTextArea" layoutX="126.0" layoutY="123.0" prefHeight="222.0" prefWidth="670.0">
+                        <JFXTextArea fx:id="roadPlanTextArea" layoutX="146.0" layoutY="123.0" opacity="0.8" prefHeight="222.0" prefWidth="670.0" style="-fx-background-color: #ffffff;" visible="false">
                            <font>
                               <Font size="14.0" />
                            </font>
                         </JFXTextArea>
+                        <Label layoutX="71.0" layoutY="25.0" prefHeight="40.0" prefWidth="172.0" text="道路规划建议：" textFill="WHITE">
+                           <font>
+                              <Font name="Arial" size="23.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
                </content>
