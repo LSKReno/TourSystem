@@ -4,11 +4,11 @@ import java.util.Date;
 
 // 汽车的数据结构
 
-public class Car {
+public class Vehicle {
 	private String number; //汽车车号
 	private Date arrive_time; //汽车到达时间
 	
-	public Car(String number, Date arrive_time) {
+	public Vehicle(String number, Date arrive_time) {
 		this.number = number;
 		this.arrive_time = arrive_time;
 	}
@@ -31,12 +31,12 @@ public class Car {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (obj instanceof Car) {
-			Car car= (Car) obj;
-			if (car.getNumber() == null || number == null) {
+		if (obj instanceof Vehicle) {
+			Vehicle vehicle = (Vehicle) obj;
+			if (vehicle.getNumber() == null || number == null) {
 				return false;
 			}else{
-				return number.equalsIgnoreCase(car.getNumber());
+				return number.equalsIgnoreCase(vehicle.getNumber());
 			}
 		}
 		return false;

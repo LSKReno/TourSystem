@@ -12,16 +12,16 @@ import datastructure.*;
  */
 
 public class Parking {
-	private MyStack<Car> parking;
-	private MyQueue<Car> shortcut;
-	private MyStack<Car> tempParking;
-	private MyStack<Car> existMyStack;
+	private MyStack<Vehicle> parking;
+	private MyQueue<Vehicle> shortcut;
+	private MyStack<Vehicle> tempParking;
+	private MyStack<Vehicle> existMyStack;
 	
 	public Parking(int maxParkingNum){
-		parking = new MyStack<Car>(Car.class, maxParkingNum);	// 车场内
+		parking = new MyStack<Vehicle>(Vehicle.class, maxParkingNum);	// 车场内
 		shortcut = new MyQueue();				// 排队车辆
-		tempParking = new MyStack<Car>(Car.class, maxParkingNum);	// 临时
-		existMyStack = new MyStack<Car>(Car.class, maxParkingNum);
+		tempParking = new MyStack<Vehicle>(Vehicle.class, maxParkingNum);	// 临时
+		existMyStack = new MyStack<Vehicle>(Vehicle.class, maxParkingNum);
 	}
 
 
@@ -46,7 +46,7 @@ public class Parking {
 					existMyStack.pop();
 				}
 				//判断候车道是否存在
-				if(shortcut.contains(new Car(number,null))){
+				if(shortcut.contains(new Vehicle(number,null))){
 					return "{\"exist\":true}";
 				}	
 			}else{
@@ -61,10 +61,10 @@ public class Parking {
 		
 		//判断停车场是否满了，若满了则添加车到候车道，否则直接添加		
 		if(parking.isFull()){
-			shortcut.add(new Car(number, null));
+			shortcut.add(new Vehicle(number, null));
 		}
 		else{
-			parking.push(new Car(number, new Date()));
+			parking.push(new Vehicle(number, new Date()));
 		}
 		
 		String JSONString = "{\"exist\":false,"
@@ -152,12 +152,12 @@ public class Parking {
 	}
 	
 	//对栈数据结构中的数据进行json格式化
-	private String generateStackJSON(MyStack<Car> myStack){
-		Car[] cars = myStack.getAll();
-		List<Car> list = new ArrayList<Car>();
-		for(int i=0; i<cars.length; i++){
-			if(cars[i] != null){
-				list.add(cars[i]);
+	private String generateStackJSON(MyStack<Vehicle> myStack){
+		Vehicle[] vehicles = myStack.getAll();
+		List<Vehicle> list = new ArrayList<Vehicle>();
+		for(int i = 0; i< vehicles.length; i++){
+			if(vehicles[i] != null){
+				list.add(vehicles[i]);
 			}
 		}
 		
@@ -166,10 +166,10 @@ public class Parking {
 
 	//对队列数据结构中的数据进行json格式化
 	private String generateQueueJSON(MyQueue myQueue){
-		List<Car> list = new ArrayList<>();
+		List<Vehicle> list = new ArrayList<>();
 		for(int i = 0; i < myQueue.size(); i++){
 			MyQueue.Node carNode = myQueue.getNode(i);
-			list.add((Car)carNode.data);
+			list.add((Vehicle)carNode.data);
 		}
 		
 		return JSON.toJSONString(list);

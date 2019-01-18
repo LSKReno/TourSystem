@@ -40,14 +40,14 @@ public class IO {
 //                if(i >= 2 ){
 //                    String type = temp.split(",")[0];
 //                    String hireStatus = temp.split(",")[5];
-//                    if (type.equals("Car") && hireStatus.equals("Available")){
+//                    if (type.equals("Vehicle") && hireStatus.equals("Available")){
 //                        String registrationID = temp.split(",")[1];
 //                        String modelName = temp.split(",")[2];
 //
 //                        SimpleDateFormat formatter = new SimpleDateFormat( "yyyy-MM-dd-HH:mm:ss");
 //                        String return_time = temp.split(",")[7];
 //
-//                        Vehicle car = new Car(registrationID,modelName , yearOfRegistration,
+//                        Vehicle car = new Vehicle(registrationID,modelName , yearOfRegistration,
 //                                fuelType ,hireStatus , Double.parseDouble(engineCapacity ),return_time);
 //                        availableVehicleList.add(car);
 //                    }
