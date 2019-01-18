@@ -107,9 +107,9 @@ public class CreateNewGraph {
 		//读取文件中路的信息
 		while ((tmp = reader.readLine()) != null) {
 //			tmp = reader.nextLine();
-            System.out.println(tmp);
+//            System.out.println(tmp);
 			infos = tmp.split(" ");
-            System.out.println(Arrays.toString(infos));
+//            System.out.println(Arrays.toString(infos));
 			from = infos[0];
 			to = infos[1];
 			dis = Integer.parseInt(infos[2]);

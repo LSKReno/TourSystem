@@ -168,7 +168,6 @@ public class TourManager {
                     bw.write(data);
                     bw.newLine();
                 }
-
             }
         }
 

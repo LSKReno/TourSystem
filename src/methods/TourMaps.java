@@ -4,7 +4,6 @@ import algorithm.TourMap;
 import com.alibaba.fastjson.JSON;
 import datastructure.Critical;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
