@@ -578,6 +578,7 @@ public class MenuController {
         DeletePark deletePark= new DeletePark();
         String results = deletePark.deletePark(deleteCarNumberText.getText());
 <<<<<<< HEAD
+<<<<<<< HEAD
 //        System.out.println(results);
 =======
         System.out.println(results);
@@ -602,6 +603,9 @@ public class MenuController {
 
 
 >>>>>>> parent of 7c06926... update
+=======
+        System.out.println(results);
+>>>>>>> parent of aad4ffe... 改过搜索景区信息显示周边后
 //        {"exist":true,"length":5,
 //                "parking":[
 //                        [{"arrive_time":1547639087315,"number":"lsk3"}
@@ -757,7 +761,6 @@ public class MenuController {
 
         JSONObject jsonDisplayGraph = JSON.parseObject(displayGraph);
         JSONArray nodes = jsonDisplayGraph.getJSONArray("nodes");
-
         for (int i = 0; i < nodes.size(); i++) {
             JSONObject node = nodes.getJSONObject(i);
             String name = node.getString("name");
@@ -765,34 +768,17 @@ public class MenuController {
                 String pop = node.getString("pop");
                 String hasRest = node.getString("hasRest");
                 String hasToilet = node.getString("hasToilet");
-//                [{"dist":9,"index":0,"time":15},{"dist":22,"index":2,"time":32},
-//                {"dist":7,"index":3,"time":8},{"dist":6,"index":4,"time":7}]
-//                String edges = node.getString("edges");
-                String edgesString = "";
-                JSONArray edges = node.getJSONArray("edges");
-                for (int j = 0; j < edges.size(); j++) {
-                    JSONObject edge = edges.getJSONObject(i);
-                    String surroundName = nodes.getJSONObject(edge.getInteger("index")).getString("name");
-                    String surroundDist = edge.getString("dist");
-                    String surroundTime = edge.getString("time");
-
-                    edgesString += surroundName+"，距离："+surroundDist+"，需时间："+surroundTime+"\n";
-
-                }
-
-
-
+                String edges = node.getString("edges");
                 String des = node.getString("des");
                 scenicInfo.add(pop);
                 scenicInfo.add(hasRest);
                 scenicInfo.add(hasToilet);
-                scenicInfo.add(edgesString);
+                scenicInfo.add(edges);
                 scenicInfo.add(des);
             }
         }
 //        0 1 2 3 4  5
 //        6 7 8 9 10 11
-
         Label [] infoLabels = {scenicNameLabel,popularityLabel, hasRestLabel,
                 hasToiletLabel, surroundLabel,desLabel};
         for (int i = 6*searchAndSortCount; i <(6*searchAndSortCount+6) ; i++) {
