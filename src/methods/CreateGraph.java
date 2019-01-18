@@ -2,6 +2,8 @@ package methods;
 
 import algorithm.CreateNewGraph;
 import datastructure.*;
+
+import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
@@ -9,7 +11,7 @@ import java.io.PrintWriter;
  */
 public class CreateGraph {
 
-    public String create(){
+    public String create() throws IOException {
         //创建图
         CreateNewGraph graph = new CreateNewGraph(0,0);
         graph.createGraph();
@@ -45,6 +47,7 @@ public class CreateGraph {
             }
 
             VNode tmp = node.getVlist().getData(0);
+
             jsonString += "{\"index\":" + tmp.getIndex() + ",\"dist\":" + tmp.getDist() + ",\"time\":"
                     + tmp.getTime() + "}";
 

@@ -8,6 +8,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.jfoenix.controls.*;
 import datastructure.Constants;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -372,8 +373,13 @@ public class MenuController {
     /**输出景区景点分布图*/
      void OutputScenicSpotsMap() {
         CreateGraph createGraph = new CreateGraph();
-        String displayGraph = createGraph.create();
-        IO io = new IO();
+         String displayGraph = null;
+         try {
+             displayGraph = createGraph.create();
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+         IO io = new IO();
         io.outputFile("D:\\TourSystem\\TourSystem\\ScenicGraph.json", displayGraph);
 //        scenicSpotsMapLabel
 
@@ -416,7 +422,12 @@ public class MenuController {
                 String guideRouteMapLabelText = "";
 
                 CreateGraph createGraph = new CreateGraph();
-                String displayGraph = createGraph.create();
+                String displayGraph = null;
+                try {
+                    displayGraph = createGraph.create();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 JSONObject jsonGraph = JSON.parseObject(displayGraph);
                 JSONArray nodes = jsonGraph.getJSONArray("nodes");
                 JSONArray tourList = jsonObject.getJSONArray("tourList");
@@ -443,7 +454,12 @@ public class MenuController {
             String guideRouteMapLabelText = "";
 
             CreateGraph createGraph = new CreateGraph();
-            String displayGraph = createGraph.create();
+            String displayGraph = null;
+            try {
+                displayGraph = createGraph.create();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             JSONObject jsonGraph = JSON.parseObject(displayGraph);
             JSONArray nodes = jsonGraph.getJSONArray("nodes");
             JSONArray tourList = jsonObject.getJSONArray("tourList");
@@ -485,7 +501,12 @@ public class MenuController {
             String shortestPathMapLabelText = "";
 
             CreateGraph createGraph = new CreateGraph();
-            String displayGraph = createGraph.create();
+            String displayGraph = null;
+            try {
+                displayGraph = createGraph.create();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
             JSONObject jsonGraph = JSON.parseObject(displayGraph);
             JSONArray nodes = jsonGraph.getJSONArray("nodes");
@@ -648,7 +669,12 @@ public class MenuController {
         String [] resultsList = results.split(",");
 
         CreateGraph createGraph = new CreateGraph();
-        String displayGraph = createGraph.create();
+        String displayGraph = null;
+        try {
+            displayGraph = createGraph.create();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         JSONObject jsonDisplayGraph = JSON.parseObject(displayGraph);
         JSONArray nodes = jsonDisplayGraph.getJSONArray("nodes");
@@ -683,7 +709,12 @@ public class MenuController {
         String [] resultsList = results.split(",");
 
         CreateGraph createGraph = new CreateGraph();
-        String displayGraph = createGraph.create();
+        String displayGraph = null;
+        try {
+            displayGraph = createGraph.create();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         JSONObject jsonDisplayGraph = JSON.parseObject(displayGraph);
         JSONArray nodes = jsonDisplayGraph.getJSONArray("nodes");
@@ -713,7 +744,12 @@ public class MenuController {
         }
 
         CreateGraph createGraph = new CreateGraph();
-        String displayGraph = createGraph.create();
+        String displayGraph = null;
+        try {
+            displayGraph = createGraph.create();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         JSONObject jsonDisplayGraph = JSON.parseObject(displayGraph);
         JSONArray nodes = jsonDisplayGraph.getJSONArray("nodes");
