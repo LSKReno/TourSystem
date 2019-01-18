@@ -409,7 +409,7 @@ public class MenuController {
         // {"tourList":[1,0,2,5,6,8,11,10,9,3,7,4,1],"pathLength":109}
 
 
-        if (!selectGuideRoute.equals("DFS")){
+        if (selectGuideRoute.equals("Euler")){
             if (!startNameGuideRoute.equals(endNameGuideRoute)){
 
                 guideRouteMapLabel.setText(selectGuideRoute+"算法只能用于计算回路, \n起点终点需相同,\n谢谢配合");

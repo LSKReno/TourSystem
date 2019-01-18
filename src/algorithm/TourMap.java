@@ -34,7 +34,7 @@ public class TourMap {
 		double f = 0.001;  // 终点因子调节
 		double x = 0.01;  // 已访问节点因子
 		if(startIndex != endIndex){
-			// 使用地杰斯特拉算法求最短路径
+			// 使用Dijkstra算法求最短路径
 			ShortestPath shortest = new ShortestPath(graph);
 			shortest.dijkstra(start, end);
 			MyList<Integer> temp = shortest.outputShortestPath();
