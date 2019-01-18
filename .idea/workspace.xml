@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="31172f55-d845-44a8-8603-7520dd361daa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" beforeDir="false" afterPath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/TourMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/TourMap.java" afterDir="false" />
+>>>>>>> parent of 7c06926... update
       <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,27 +47,28 @@
     <session id="148834848">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.24" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="3" />
-          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="JAVA" value="8173" />
+=======
+          <entry key="JAVA" value="7943" />
+>>>>>>> parent of 7c06926... update
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="90" />
           <entry key="XML" value="70" />
@@ -71,7 +77,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
+<<<<<<< HEAD
           <entry key="JAVA" value="240" />
+=======
+          <entry key="JAVA" value="236" />
+>>>>>>> parent of 7c06926... update
           <entry key="JSON" value="7" />
           <entry key="PLAIN_TEXT" value="44" />
           <entry key="XML" value="22" />
@@ -84,8 +94,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="220">
               <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+=======
+            <state relative-caret-position="200">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+>>>>>>> parent of 7c06926... update
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,10 +109,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="219">
               <caret line="751" column="94" selection-start-line="751" selection-start-column="94" selection-end-line="751" selection-end-column="94" />
+=======
+        <entry file="file://$PROJECT_DIR$/src/algorithm/ShortestPath.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="183" selection-start-line="183" selection-end-line="183" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="451" selection-start-line="451" selection-end-line="451" />
+>>>>>>> parent of 7c06926... update
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5041#8912#0" />
@@ -119,6 +150,34 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algorithm/TourMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="198" column="14" lean-forward="true" selection-start-line="198" selection-start-column="14" selection-end-line="198" selection-end-column="14" />
+              <folding>
+                <element signature="method#bdfsplus#0;class#TourMap#0" />
+                <element signature="method#checkFinal#0;class#TourMap#0" />
+                <element signature="method#clear#0;class#TourMap#0" />
+                <element signature="method#getHamilton#0;class#TourMap#0" />
+                <element signature="method#EulerTour#0;class#TourMap#0" />
+                <element signature="method#findEulerTour#0;class#TourMap#0" />
+                <element signature="method#getEnd#0;class#TourMap#0" />
+                <element signature="method#convertToList#0;class#TourMap#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/methods/TourMaps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -194,9 +253,13 @@
         <option value="$PROJECT_DIR$/src/controller/AdministerMenuController.java" />
         <option value="$PROJECT_DIR$/src/methods/TourMaps.java" />
         <option value="$PROJECT_DIR$/Info.txt" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/algorithm/TourMap.java" />
         <option value="$PROJECT_DIR$/src/controller/LoginController.java" />
+=======
+>>>>>>> parent of 7c06926... update
         <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/TourMap.java" />
       </list>
     </option>
   </component>
@@ -263,7 +326,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547820847377" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547811707568" />
+>>>>>>> parent of 7c06926... update
     <property name="last_opened_file_path" value="F:/数据结构课设/TourSystemChen" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -409,10 +476,14 @@
       <workItem from="1547731081855" duration="662000" />
       <workItem from="1547790701980" duration="700000" />
       <workItem from="1547792216829" duration="9959000" />
+<<<<<<< HEAD
       <workItem from="1547808820549" duration="3225000" />
       <workItem from="1547813968495" duration="469000" />
       <workItem from="1547815007632" duration="319000" />
       <workItem from="1547818151040" duration="2689000" />
+=======
+      <workItem from="1547808820549" duration="2992000" />
+>>>>>>> parent of 7c06926... update
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -444,10 +515,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="143224000" />
+=======
+    <option name="totallyTimeSpent" value="139514000" />
+>>>>>>> parent of 7c06926... update
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.19726562" />
@@ -460,7 +535,11 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.3005618" />
+=======
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5449438" />
+>>>>>>> parent of 7c06926... update
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -559,12 +638,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Menu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="216" column="119" selection-start-line="216" selection-start-column="119" selection-end-line="216" selection-end-column="119" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/lsk.fxml" />
     <entry file="file://$PROJECT_DIR$/src/methods/DeletePark.java">
@@ -650,12 +729,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/AdministerMenu.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastructure/VNode.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -781,39 +867,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/ShortestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3660">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/methods/TourMaps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="260">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/TourMap.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="186" column="5" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+        <state relative-caret-position="200">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="method#bdfsplus#0;class#TourMap#0" />
-            <element signature="method#checkFinal#0;class#TourMap#0" />
-            <element signature="method#clear#0;class#TourMap#0" />
-            <element signature="method#getHamilton#0;class#TourMap#0" />
-            <element signature="method#EulerTour#0;class#TourMap#0" />
-            <element signature="method#findEulerTour#0;class#TourMap#0" />
-            <element signature="method#getEnd#0;class#TourMap#0" />
-            <element signature="method#convertToList#0;class#TourMap#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithm/ShortestPath.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="100">
           <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
         </state>
@@ -823,14 +896,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="275" column="59" lean-forward="true" selection-start-line="275" selection-start-column="59" selection-end-line="275" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+=======
+        <state relative-caret-position="85">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="451" selection-start-line="451" selection-end-line="451" />
+>>>>>>> parent of 7c06926... update
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5041#8912#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/TourMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="219">
           <caret line="751" column="94" selection-start-line="751" selection-start-column="94" selection-end-line="751" selection-end-column="94" />
           <folding>
@@ -851,6 +937,19 @@
           <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+        <state relative-caret-position="424">
+          <caret line="198" column="14" lean-forward="true" selection-start-line="198" selection-start-column="14" selection-end-line="198" selection-end-column="14" />
+          <folding>
+            <element signature="method#bdfsplus#0;class#TourMap#0" />
+            <element signature="method#checkFinal#0;class#TourMap#0" />
+            <element signature="method#clear#0;class#TourMap#0" />
+            <element signature="method#getHamilton#0;class#TourMap#0" />
+            <element signature="method#EulerTour#0;class#TourMap#0" />
+            <element signature="method#findEulerTour#0;class#TourMap#0" />
+            <element signature="method#getEnd#0;class#TourMap#0" />
+            <element signature="method#convertToList#0;class#TourMap#0" />
+>>>>>>> parent of 7c06926... update
           </folding>
         </state>
       </provider>

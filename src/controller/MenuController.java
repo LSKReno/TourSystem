@@ -409,7 +409,7 @@ public class MenuController {
         // {"tourList":[1,0,2,5,6,8,11,10,9,3,7,4,1],"pathLength":109}
 
 
-        if (selectGuideRoute.equals("Euler")||selectGuideRoute.equals("Hamilton")){
+        if (selectGuideRoute.equals("Euler")){
             if (!startNameGuideRoute.equals(endNameGuideRoute)){
 
                 guideRouteMapLabel.setText(selectGuideRoute+"算法只能用于计算回路, \n起点终点需相同,\n谢谢配合");
@@ -577,7 +577,31 @@ public class MenuController {
     void carOut(ActionEvent event){
         DeletePark deletePark= new DeletePark();
         String results = deletePark.deletePark(deleteCarNumberText.getText());
+<<<<<<< HEAD
 //        System.out.println(results);
+=======
+        System.out.println(results);
+//        {"exist":true,"length":4,
+//          "parking":[
+//                  [{"arrive_time":1547636690533,"number":"lsk2"},{"arrive_time":1547636687564,"number":"lsk1"}]
+//                 ,[{"arrive_time":1547636687564,"number":"lsk1"}]
+//                 ,[]
+//                 ,[{"arrive_time":1547636690533,"number":"lsk2"}]  ]
+//      ,"tempParking":[
+//                  []
+//                  ,[{"arrive_time":1547636690533,"number":"lsk2"}]
+//                  ,[{"arrive_time":1547636690533,"number":"lsk2"}]
+//                  ,[]]
+//      ,"shortcut":[[],[],[],[]],"parkTime":0.12106667,"cost":6.0}
+
+//        {"exist":true,"length":2,
+//                "parking":[
+//                        [{"arrive_time":1547638868865,"number":"lsk1"}]
+//            ,[]]
+//            ,"tempParking":[[],[]],"shortcut":[[],[]],"parkTime":0.06955,"cost":3.0}
+
+
+>>>>>>> parent of 7c06926... update
 //        {"exist":true,"length":5,
 //                "parking":[
 //                        [{"arrive_time":1547639087315,"number":"lsk3"}
@@ -609,6 +633,9 @@ public class MenuController {
                     + carOutInfo.getString("cost") );
             carParkingControl--;
         }
+
+
+
     }
 
     @FXML
