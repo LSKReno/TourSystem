@@ -13,7 +13,7 @@ import java.util.Map;
  * Created by LSK.Reno on 2019/1/14 22:21.
  */
 public class KruskalRoad {
-    public String KruskalRoad(){
+    public String kruskalRoad(){
         Kruskal kruskal = new Kruskal(Critical.getGraph());
         //克鲁斯卡尔算法生成路线图
         List<VData> results = kruskal.kruskal();

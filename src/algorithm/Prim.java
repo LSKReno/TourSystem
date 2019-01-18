@@ -11,7 +11,7 @@ public class Prim
 
     public List<VData> prim(String start){
         List<VData> results = new ArrayList<>(); //用于保存结果最小生成树的边
-        int[] lowcost = new int[graph.getArcNum()];  //到新集合的最小权
+        int[] lowCost = new int[graph.getArcNum()];  //到新集合的最小权
         int[] pre= new int[graph.getArcNum()];//存取前驱结点
         int i, j, min, minIndex , sum = 0;
         int startIndex= getPos(start);
@@ -23,7 +23,7 @@ public class Prim
         //初始化辅助数组
         for(i=0;i<graph.getArcNum();i++)
         {
-            lowcost[i]=getLength(startIndex,i);
+            lowCost[i]=getLength(startIndex,i);
             pre[i]=startIndex;
         }
         //一共需要加入n-1个点
@@ -34,23 +34,23 @@ public class Prim
             //每次找到距离集合最近的点
             for(j=0;j<graph.getArcNum();j++)
             {
-                if(lowcost[j]!=0&&lowcost[j]<min && j != startIndex)
+                if(lowCost[j]!=0&&lowCost[j]<min && j != startIndex)
                 {
-                    min=lowcost[j];
+                    min=lowCost[j];
                     minIndex=j;
                 }
             }
 
             results.add(new VData(pre[minIndex], minIndex,min ));
-            lowcost[minIndex]=0;
+            lowCost[minIndex]=0;
             sum += min;
 
             //加入该点后，更新其它点到集合的距离
             for(j=0;j<graph.getArcNum();j++)
             {
-                if(lowcost[j]!=0 && lowcost[j]>getLength(minIndex, j))
+                if(lowCost[j]!=0 && lowCost[j]>getLength(minIndex, j))
                 {
-                    lowcost[j]=getLength(minIndex, j);
+                    lowCost[j]=getLength(minIndex, j);
                     pre[j]=minIndex;
                 }
             }
@@ -68,7 +68,6 @@ public class Prim
                 break;
             }
         }
-
         return pos;
     }
 

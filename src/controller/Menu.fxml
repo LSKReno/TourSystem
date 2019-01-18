@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="746.0" prefWidth="1117.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+<AnchorPane prefHeight="746.0" prefWidth="1111.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
 <children>
-      <ImageView fitHeight="745.0" fitWidth="1309.0" layoutX="1.0" layoutY="-1.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="745.0" fitWidth="1309.0" layoutX="1.0" layoutY="-1.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@background1.jpg" />
+            <Image url="@Scenic-bg1.jpg" />
          </image>
       </ImageView>
       <Label alignment="CENTER" layoutX="215.0" layoutY="6.0" prefHeight="89.0" prefWidth="691.0" text="阿尔卑斯景区欢迎您">
