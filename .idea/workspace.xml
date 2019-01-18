@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="31172f55-d845-44a8-8603-7520dd361daa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" beforeDir="false" afterPath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/AdministerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TourSystem/Controller/AdministerMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TourSystem/Controller/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TourSystem/Controller/Menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Prim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AdministerMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministerMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/AdministerMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AdministerMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/methods/KruskalRoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/methods/KruskalRoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$175153_软英1701_李思宽.docx" beforeDir="false" />
-    </list>
+    <list default="true" id="31172f55-d845-44a8-8603-7520dd361daa" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/AdministerMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+            <state relative-caret-position="115">
+              <caret line="238" column="44" lean-forward="true" selection-start-line="238" selection-start-column="44" selection-end-line="238" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5942#5943#0" expanded="true" />
@@ -265,7 +254,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547799424504" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547800299099" />
     <property name="last_opened_file_path" value="F:/数据结构课设/TourSystemChen" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -391,7 +380,7 @@
       <workItem from="1547703904190" duration="9486000" />
       <workItem from="1547731081855" duration="662000" />
       <workItem from="1547790701980" duration="700000" />
-      <workItem from="1547792216829" duration="7087000" />
+      <workItem from="1547792216829" duration="7691000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -418,10 +407,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133650000" />
+    <option name="totallyTimeSpent" value="134254000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49566725" visible="true" weight="0.19726562" />
@@ -820,8 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/AdministerMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+        <state relative-caret-position="115">
+          <caret line="238" column="44" lean-forward="true" selection-start-line="238" selection-start-column="44" selection-end-line="238" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5942#5943#0" expanded="true" />
