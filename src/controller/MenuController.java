@@ -409,7 +409,7 @@ public class MenuController {
         // {"tourList":[1,0,2,5,6,8,11,10,9,3,7,4,1],"pathLength":109}
 
 
-        if (selectGuideRoute.equals("Euler")){
+        if (selectGuideRoute.equals("Euler")||selectGuideRoute.equals("Hamilton")){
             if (!startNameGuideRoute.equals(endNameGuideRoute)){
 
                 guideRouteMapLabel.setText(selectGuideRoute+"算法只能用于计算回路, \n起点终点需相同,\n谢谢配合");
@@ -577,35 +577,7 @@ public class MenuController {
     void carOut(ActionEvent event){
         DeletePark deletePark= new DeletePark();
         String results = deletePark.deletePark(deleteCarNumberText.getText());
-<<<<<<< HEAD
-<<<<<<< HEAD
 //        System.out.println(results);
-=======
-        System.out.println(results);
-//        {"exist":true,"length":4,
-//          "parking":[
-//                  [{"arrive_time":1547636690533,"number":"lsk2"},{"arrive_time":1547636687564,"number":"lsk1"}]
-//                 ,[{"arrive_time":1547636687564,"number":"lsk1"}]
-//                 ,[]
-//                 ,[{"arrive_time":1547636690533,"number":"lsk2"}]  ]
-//      ,"tempParking":[
-//                  []
-//                  ,[{"arrive_time":1547636690533,"number":"lsk2"}]
-//                  ,[{"arrive_time":1547636690533,"number":"lsk2"}]
-//                  ,[]]
-//      ,"shortcut":[[],[],[],[]],"parkTime":0.12106667,"cost":6.0}
-
-//        {"exist":true,"length":2,
-//                "parking":[
-//                        [{"arrive_time":1547638868865,"number":"lsk1"}]
-//            ,[]]
-//            ,"tempParking":[[],[]],"shortcut":[[],[]],"parkTime":0.06955,"cost":3.0}
-
-
->>>>>>> parent of 7c06926... update
-=======
-        System.out.println(results);
->>>>>>> parent of aad4ffe... 改过搜索景区信息显示周边后
 //        {"exist":true,"length":5,
 //                "parking":[
 //                        [{"arrive_time":1547639087315,"number":"lsk3"}
@@ -637,9 +609,6 @@ public class MenuController {
                     + carOutInfo.getString("cost") );
             carParkingControl--;
         }
-
-
-
     }
 
     @FXML
@@ -761,6 +730,7 @@ public class MenuController {
 
         JSONObject jsonDisplayGraph = JSON.parseObject(displayGraph);
         JSONArray nodes = jsonDisplayGraph.getJSONArray("nodes");
+
         for (int i = 0; i < nodes.size(); i++) {
             JSONObject node = nodes.getJSONObject(i);
             String name = node.getString("name");
@@ -768,7 +738,23 @@ public class MenuController {
                 String pop = node.getString("pop");
                 String hasRest = node.getString("hasRest");
                 String hasToilet = node.getString("hasToilet");
+//                [{"dist":9,"index":0,"time":15},{"dist":22,"index":2,"time":32},
+//                {"dist":7,"index":3,"time":8},{"dist":6,"index":4,"time":7}]
                 String edges = node.getString("edges");
+//                String edgesString = "";
+//                JSONArray edges = node.getJSONArray("edges");
+//                for (int j = 0; j < edges.size(); j++) {
+//                    JSONObject edge = edges.getJSONObject(i);
+//                    String surroundName = nodes.getJSONObject(edge.getInteger("index")).getString("name");
+//                    String surroundDist = edge.getString("dist");
+//                    String surroundTime = edge.getString("time");
+//
+//                    edgesString += surroundName+"，距离："+surroundDist+"，需时间："+surroundTime+"\n";
+//
+//                }
+
+
+
                 String des = node.getString("des");
                 scenicInfo.add(pop);
                 scenicInfo.add(hasRest);
@@ -779,6 +765,7 @@ public class MenuController {
         }
 //        0 1 2 3 4  5
 //        6 7 8 9 10 11
+
         Label [] infoLabels = {scenicNameLabel,popularityLabel, hasRestLabel,
                 hasToiletLabel, surroundLabel,desLabel};
         for (int i = 6*searchAndSortCount; i <(6*searchAndSortCount+6) ; i++) {
