@@ -181,9 +181,10 @@ public class TourMap {
 		visited = new boolean[graph.getArcNum()];
 		tourIndexList = new ArrayList<>();
 		startIndex = -1;
+		endIndex= -1;
 		length = 0;
 		count = 0;
-		endIndex= -1;
+
 	}
 
 
@@ -245,6 +246,7 @@ public class TourMap {
 		endIndex = getPos(end);
 
 		int[] path = new int[graph.getArcNum()+1];       //记录哈密顿路径
+        // 初始化
 		for(int i = 0;i < graph.getArcNum();i++) {
 			visited[i] = false;     //初始化，所有顶点均未被遍历
 			path[i] = -1;          //初始化，未选中起点及到达任何顶点
@@ -279,7 +281,7 @@ public class TourMap {
 	}
 
 	private boolean dfs(int[] path,int step, boolean cycle) {
-		//如果起点和终点不同，则需要遍历节点数为节点总数-2。  相同则为 节点总数-1    此处的step从1开始
+		//如果起点和终点不同，则需要遍历节点数为节点总数-2。  相同则为节点总数-1 此处的step从1开始
 		if((step == graph.getArcNum() && cycle) || (step == (graph.getArcNum() - 1) && !cycle)) {
 			if(getDis(path[step - 1], endIndex) < Constants.INFINITY) { //最后一步到达的顶点能够到终点
 				return true;
