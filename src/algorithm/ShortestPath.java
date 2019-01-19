@@ -72,9 +72,12 @@ public class ShortestPath {
 			for (int i = 0; i < graph.getArcNum(); i++) {
 				for (int j = 0; j < graph.getArcNum(); j++) {
 					int tmp_value;
-					if(distance[i][k] == Constants.INFINITY || distance[k][j]==Constants.INFINITY)
+					if(distance[i][k] == Constants.INFINITY || distance[k][j]==Constants.INFINITY){
 						tmp_value = Constants.INFINITY;
-					else tmp_value = distance[i][k] + distance[k][j];
+					}
+					else{
+					    tmp_value = distance[i][k] + distance[k][j];
+                    }
 					if (distance[i][j] > tmp_value) {
 						distance[i][j] = tmp_value;
 						path[i][j] = path[i][k];
