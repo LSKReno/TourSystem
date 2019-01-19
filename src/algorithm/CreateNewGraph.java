@@ -13,50 +13,7 @@ public class CreateNewGraph {
 	private Graph graph;
 	private BufferedReader reader;
 	private BufferedReader readPos;
-
-//	String filename = "D:\\Vehicle Hiring System\\src\\Vehicle_Hiring_System\\Vehicles.txt";
-//	File file = new File(filename);
-//	BufferedReader reader = new BufferedReader(new FileReader(file));
-//	String temp;
-//	int i = 1;
-//            while((temp = reader.readLine()) != null) {
-//		if(i >= 2 ){
-//			String type = temp.split(",")[0];
-//			String hireStatus = temp.split(",")[5];
-//			if (type.equals("Vehicle") && hireStatus.equals("Available")){
-//				String registrationID = temp.split(",")[1];
-//				String modelName = temp.split(",")[2];
-//				String yearOfRegistration = temp.split(",")[3];
-//				String fuelType = temp.split(",")[4];
-//				String engineCapacity = temp.split(",")[6];
-//
-//				SimpleDateFormat formatter = new SimpleDateFormat( "yyyy-MM-dd-HH:mm:ss");
-//				String return_time = temp.split(",")[7];
-//
-//				Vehicle car = new Vehicle(registrationID,modelName , yearOfRegistration,
-//						fuelType ,hireStatus , Double.parseDouble(engineCapacity ),return_time);
-//				availableVehicleList.add(car);
-//			}
-//			else if(type.equals("Van") && hireStatus.equals("Available")){
-//				String registrationID = temp.split(",")[1];
-//				String modelName = temp.split(",")[2];
-//				String yearOfRegistration = temp.split(",")[3];
-//				String fuelType = temp.split(",")[4];
-//				String maxLoadCapacity = temp.split(",")[6];
-//
-//				SimpleDateFormat formatter = new SimpleDateFormat( "yyyy-MM-dd-HH:mm:ss");
-//				String return_time = temp.split(",")[7];
-//
-//				Vehicle van = new Van(registrationID,modelName , yearOfRegistration,
-//						fuelType ,hireStatus , Double.parseDouble(maxLoadCapacity),return_time);
-//				availableVehicleList.add(van);
-//			}
-//		}
-//
-//		i++;
-//	}
-//            reader.close();
-//}
+	
 	public CreateNewGraph(int arcNum, int vetNum) {
 		Critical.setGraph(arcNum, vetNum);
 		graph = Critical.getGraph();
