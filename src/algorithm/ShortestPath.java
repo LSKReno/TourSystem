@@ -26,8 +26,8 @@ public class ShortestPath {
 		desIndex = getPos(des);
 		clear();
 
-		//初始化最短距离数组为INF
-		for(int i=0; i<graph.getArcNum(); i++){	
+		//初始化最短距离数组为INF,初始点到初始点为0
+		for(int i=0; i<graph.getArcNum(); i++){
 			dis[i] = (i==sourceIndex ? 0 : Constants.INFINITY);
 		}
 		
@@ -38,8 +38,9 @@ public class ShortestPath {
 					m = dis[minPos=j];
 				}
 			}
-			if(minPos == -1)
+			if(minPos == -1){
 				continue;
+			}
 			vis[minPos] = 1;
 			for(int j=0; j<graph.getArcNum(); j++){
 				if(vis[j]==0 && dis[minPos]+getLength(minPos, j)<dis[j]){

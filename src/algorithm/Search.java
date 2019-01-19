@@ -55,8 +55,8 @@ public class Search {
         }
         return false;
     }
-
-    private int[] calculateK(String keyword){
+//ababa  -1 0 0 1 2
+    public int[] calculateK(String keyword){
         int[] next = new int[keyword.length()];
         next[0] = -1;
         int k = -1;

@@ -13,7 +13,7 @@ public class CreateNewGraph {
 	private Graph graph;
 	private BufferedReader reader;
 	private BufferedReader readPos;
-	
+
 	public CreateNewGraph(int arcNum, int vetNum) {
 		Critical.setGraph(arcNum, vetNum);
 		graph = Critical.getGraph();
@@ -84,7 +84,6 @@ public class CreateNewGraph {
 		graph.setRoadNum(count);
 
 		//读取位置信息
-//		tmp = readPos.nextLine();
         tmp = readPos.readLine();
 		MyList<Integer> xPos = new MyList<>();
 		infos = tmp.split(" ");
@@ -94,7 +93,6 @@ public class CreateNewGraph {
 			xPos.add(temp);
 		}
 
-//		tmp = readPos.nextLine();
         tmp = readPos.readLine();
         MyList<Integer> yPos = new MyList<>();
 		infos = tmp.split(" ");
