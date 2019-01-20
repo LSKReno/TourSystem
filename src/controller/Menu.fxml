@@ -36,9 +36,10 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="810.0">
                      <children>
-                        <Label fx:id="scenicSpotsMapLabel" layoutX="27.0" layoutY="134.0" prefHeight="301.0" prefWidth="667.0" text="Label">
+                        <JFXTextArea fx:id="scenicSpotsMapTextArea" layoutX="77.0" layoutY="81.0" prefHeight="442.0" prefWidth="691.0" />
+                        <Label fx:id="scenicSpotsMapLabel" layoutX="52.0" layoutY="14.0" prefHeight="50.0" prefWidth="601.0" text="景区分布图：">
                            <font>
-                              <Font size="15.0" />
+                              <Font size="16.0" />
                            </font>
                         </Label>
                      </children></AnchorPane>
@@ -174,11 +175,6 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <JFXButton fx:id="parkingButton" buttonType="RAISED" layoutX="522.0" layoutY="471.0" onAction="#parking" prefHeight="50.0" prefWidth="299.0" style="-fx-background-color: #fa5155;" text="停车场车辆进出记录信息">
-                           <font>
-                              <Font size="15.0" />
-                           </font>
-                        </JFXButton>
                         <Label alignment="CENTER" layoutX="337.0" layoutY="14.0" prefHeight="42.0" prefWidth="146.0" text="车辆进入">
                            <font>
                               <Font name="Arial" size="32.0" />
@@ -219,9 +215,29 @@
                               <Font size="14.0" />
                            </font>
                         </JFXButton>
-                        <Label fx:id="carOutInfoLabel" layoutX="66.0" layoutY="312.0" prefHeight="42.0" prefWidth="704.0">
+                        <Label fx:id="carOutInfoLabel" layoutX="61.0" layoutY="260.0" prefHeight="42.0" prefWidth="551.0">
                            <font>
                               <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXTextArea fx:id="parkingTextArea" layoutX="14.0" layoutY="351.0" prefHeight="204.0" prefWidth="374.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextArea>
+                        <JFXTextArea fx:id="shortcutTextArea" layoutX="425.0" layoutY="354.0" prefHeight="201.0" prefWidth="330.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </JFXTextArea>
+                        <Label layoutX="29.0" layoutY="311.0" prefHeight="39.0" prefWidth="110.0" text="Parking：">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="427.0" layoutY="311.0" prefHeight="39.0" prefWidth="110.0" text="Shortcut：">
+                           <font>
+                              <Font size="20.0" />
                            </font>
                         </Label>
                      </children></AnchorPane>
@@ -412,12 +428,12 @@
                                           <Font name="Arial" size="18.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="46.0" layoutY="199.0" prefHeight="40.0" prefWidth="114.0" text="景点描述：">
+                                    <Label layoutX="46.0" layoutY="229.0" prefHeight="40.0" prefWidth="114.0" text="景点描述：">
                                        <font>
                                           <Font name="Arial" size="19.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="desLabel" alignment="TOP_LEFT" layoutX="184.0" layoutY="212.0" prefHeight="155.0" prefWidth="368.0" text="我是景点描述">
+                                    <Label fx:id="desLabel" alignment="TOP_LEFT" layoutX="190.0" layoutY="242.0" prefHeight="90.0" prefWidth="368.0" text="我是景点描述">
                                        <font>
                                           <Font name="Arial" size="15.0" />
                                        </font>
@@ -427,16 +443,16 @@
                                           <Font name="Arial" size="19.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="surroundLabel" layoutX="170.0" layoutY="169.0" prefHeight="34.0" prefWidth="420.0" text="我是周边">
-                                       <font>
-                                          <Font name="Arial" size="18.0" />
-                                       </font>
-                                    </Label>
                                     <JFXButton fx:id="backToSearchAndSortButton" buttonType="RAISED" layoutX="467.0" layoutY="333.0" onAction="#notVisible" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #fa5155;" text="返回">
                                        <font>
                                           <Font size="15.0" />
                                        </font>
                                     </JFXButton>
+                                    <JFXTextArea fx:id="surroundTextArea" layoutX="164.0" layoutY="167.0" prefHeight="68.0" prefWidth="420.0" promptText="我是景点周边">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </JFXTextArea>
                                  </children>
                               </AnchorPane>
                            </children>

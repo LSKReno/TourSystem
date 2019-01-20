@@ -26,6 +26,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import methods.*;
 
+import javax.swing.*;
+
 /**
  * Created by LSK.Reno on 2018/7/26.
  */
@@ -41,6 +43,9 @@ public class MenuController {
 
     @FXML
     private Tab scenicSpotsMapTAB;
+
+    @FXML
+    private JFXTextArea scenicSpotsMapTextArea;
 
     @FXML
     private Label scenicSpotsMapLabel;
@@ -265,7 +270,7 @@ public class MenuController {
     private Label desLabel;
 
     @FXML
-    private Label surroundLabel;
+    private JFXTextArea surroundTextArea;
 
     @FXML
     private JFXButton backToSearchAndSortButton;
@@ -278,6 +283,12 @@ public class MenuController {
 
     @FXML
     private Label carParkingInfoLabel;
+
+    @FXML
+    private JFXTextArea parkingTextArea;
+
+    @FXML
+    private JFXTextArea shortcutTextArea;
 
     @FXML
     private JFXTextField deleteCarNumberText;
@@ -299,8 +310,9 @@ public class MenuController {
     public void initialize() {
         CreatePark createPark = new CreatePark();
         createPark.create();
-
+        // 初始化主界面景区分布图，就是一个矩阵啦
         OutputScenicSpotsMap();
+
         JFXComboBox sortAlgorithmBox = (JFXComboBox) searchAndSortPane.lookup("#sortAlgorithmComboBox");
         ObservableList<String> cardCategoryList = FXCollections.observableArrayList("冒泡排序", "选择排序",
                 "插入排序", "希尔排序","归并排序", "快速排序","堆排序", "计数排序","桶排序", "基数排序");
@@ -380,26 +392,76 @@ public class MenuController {
              e.printStackTrace();
          }
          IO io = new IO();
-        io.outputFile("D:\\TourSystem\\TourSystem\\ScenicGraph.json", displayGraph);
-//        scenicSpotsMapLabel
+         io.outputFile("D:\\TourSystem\\TourSystem\\ScenicGraph.json", displayGraph);
+         JSONObject jsonGraph = JSON.parseObject(displayGraph);
+         scenicSpotsMapLabel.setText("景区分布图： 总景点数为："+jsonGraph.getString("arcNum")
+                 +", 道路总数为："+jsonGraph.getString("vetNum"));
+         JSONArray nodes = jsonGraph.getJSONArray("nodes");
+         // 邻接矩阵的实现
+         int [][] matrix = new int[nodes.size()][nodes.size()];
+         for (int i = 0; i < nodes.size(); i++) {        // i代表行数
+             JSONObject node = nodes.getJSONObject(i);
+             JSONArray edges = node.getJSONArray("edges");
+
+             MyList<Integer> edgeList = new MyList<>();
+             System.out.println(edges.size());
+             for (int j = 0; j < edges.size(); j++) {
+//                 System.out.println("lsk");
+                 edgeList.add(edges.getJSONObject(j).getInteger("index"));
+             }
+
+             for (int j = 0; j < nodes.size(); j++) {   // j代表列数
+                 if (find(j,edgeList)){
+                     int index = findIndex(j, edgeList);
+                     matrix[i][j] = node.getJSONArray("edges").getJSONObject(index).getInteger("dist");
+                     matrix[j][i] = node.getJSONArray("edges").getJSONObject(index).getInteger("dist");
+                 }
+                 else{
+                     matrix[i][j] = Constants.INFINITY;
+                     matrix[j][i] = Constants.INFINITY;
+                 }
+             }
+         }
+
+         String matrixString = "\t";
+         for (int i = 0; i < nodes.size(); i++) {
+             JSONObject node = nodes.getJSONObject(i);
+             matrixString += node.getString("name")+"\t";
+         }
+         matrixString += "\n";
+         for (int i = 0; i < nodes.size(); i++) {
+             JSONObject node = nodes.getJSONObject(i);
+             matrixString += node.getString("name")+"\t";
+
+             for (int j = 0; j < nodes.size(); j++) {
+                 matrixString  += String.valueOf(matrix[i][j])+"\t";
+             }
+             matrixString += "\n";
+         }
+        scenicSpotsMapTextArea.setText(matrixString);
 
 
     }
+    public boolean find(Integer index,MyList<Integer> list){
+         boolean flag = false;
+        for (int i = 0; i < list.getSize(); i++) {
+            if (index==list.getData(i)){
+                flag=true;
+            }
+        }
+        return flag;
+    }
+    public int findIndex(Integer integer,MyList<Integer> list){
+        int index= 32767;
+        for (int i = 0; i < list.getSize(); i++) {
+            if (integer==list.getData(i)){
+                index = i;
+            }
+        }
+        return index;
+    }
 
-//    /**景点的查找与排序*/
-//    @FXML
-//    void searchAndSort(ActionEvent event) {
-//        ScenicSearchAndSortController scenicSearchAndSortController= new ScenicSearchAndSortController();
-//        Stage scenicSearchAndSortStage = scenicSearchAndSortController.setScenicSearchAndSortStage(Main.getStage());
-//        scenicSearchAndSortStage.setTitle("景点自助查询与排序");
-//        try {
-//            Scene scene = new Scene(FXMLLoader.load(getClass().getResource("ScenicSearchAndSort.fxml")));
-//            scenicSearchAndSortStage.setScene(scene);
-////            scene.getStylesheets().add(this.getClass().getResource("ScenicSearchAndSort.css").toExternalForm());
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
+
     /**输出导游线路图*/
     @FXML
     void OutputGuideRouteMap(ActionEvent event) {
@@ -407,7 +469,6 @@ public class MenuController {
         String endNameGuideRoute = endNameGuideRouteText.getText();
         String selectGuideRoute = guideRouteComboBox.getValue();
         // {"tourList":[1,0,2,5,6,8,11,10,9,3,7,4,1],"pathLength":109}
-
 
         if (selectGuideRoute.equals("Euler")||selectGuideRoute.equals("Hamilton")){
             if (!startNameGuideRoute.equals(endNameGuideRoute)){
@@ -445,7 +506,6 @@ public class MenuController {
                 guideRouteMapLabel.setText(guideRouteMapLabelText);
                 guideRouteDisLabel.setText(String.valueOf(jsonObject.getInteger("pathLength")));
             }
-
 
         }else{
             TourMaps tourMaps = new TourMaps();
@@ -525,13 +585,6 @@ public class MenuController {
         }
     }
 
-    /**停车场车辆进出记录信息*/
-    @FXML
-    void parking(ActionEvent event) {
-
-
-    }
-
     /**车辆进入*/
     @FXML
     void carIn(ActionEvent event){
@@ -569,6 +622,21 @@ public class MenuController {
             else if (exist){
                 carParkingInfoLabel.setText("该车辆已停入停车场或在便道等候区, 无需再次泊车");
             }
+            String parkingInfo = "";
+            for (int i = 0; i < parking.size(); i++) {
+                JSONObject vehicle = parking.getJSONObject(i);
+                long time = Long.parseLong(vehicle.getString("arrive_time"));
+                Date date = new Date(time);
+                parkingInfo += "车辆："+vehicle.getString("number")+"于"+String.valueOf(date)+"停入停车场内。\n";
+            }
+            parkingTextArea.setText(parkingInfo);
+
+            String shortcutInfo = "";
+            for (int i = 0; i < shortcut.size(); i++) {
+                JSONObject vehicle = shortcut.getJSONObject(i);
+                shortcutInfo += "车辆："+vehicle.getString("number")+"于比便道内等候。\n";
+            }
+            shortcutTextArea.setText(shortcutInfo);
         }
     }
 
@@ -577,22 +645,24 @@ public class MenuController {
     void carOut(ActionEvent event){
         DeletePark deletePark= new DeletePark();
         String results = deletePark.deletePark(deleteCarNumberText.getText());
-//        System.out.println(results);
-//        {"exist":true,"length":5,
-//                "parking":[
-//                        [{"arrive_time":1547639087315,"number":"lsk3"}
-//                        ,{"arrive_time":1547639083767,"number":"lsk2"}
-//                        ,{"arrive_time":1547639080214,"number":"lsk1"}]
-//            ,[{"arrive_time":1547639083767,"number":"lsk2"},{"arrive_time":1547639080214,"number":"lsk1"}]
-//            ,[{"arrive_time":1547639080214,"number":"lsk1"}]
-//            ,[{"arrive_time":1547639087315,"number":"lsk3"},{"arrive_time":1547639080214,"number":"lsk1"}]
-//            ,[{"arrive_time":1547639105410,"number":"lsk4"},{"arrive_time":1547639087315,"number":"lsk3"},{"arrive_time":1547639080214,"number":"lsk1"}]]
-//            ,"tempParking":[[],[{"arrive_time":1547639087315,"number":"lsk3"}],[{"arrive_time":1547639087315,"number":"lsk3"}],[],[]]
-//            ,"shortcut":[[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk5"}]]
-//            ,"parkTime":0.36071667,"cost":18.0}
-
+        System.out.println(results);
+//        {"exist":true,"length":7,
+// "parking":[
+// [{"arrive_time":1547963931382,"number":"lsk3"},{"arrive_time":1547963929050,"number":"lsk2"},{"arrive_time":1547963926628,"number":"lsk1"}]
+// ,[{"arrive_time":1547963929050,"number":"lsk2"},{"arrive_time":1547963926628,"number":"lsk1"}]
+// ,[{"arrive_time":1547963926628,"number":"lsk1"}]
+// ,[]
+// ,[{"arrive_time":1547963929050,"number":"lsk2"}]
+// ,[{"arrive_time":1547963931382,"number":"lsk3"},{"arrive_time":1547963929050,"number":"lsk2"}]
+// ,[{"arrive_time":1547963943528,"number":"lsk4"},{"arrive_time":1547963931382,"number":"lsk3"},{"arrive_time":1547963929050,"number":"lsk2"}]]
+// "shortcut":[[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk4"},{"number":"lsk5"}]
+// ,[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk4"},{"number":"lsk5"}]
+// ,[{"number":"lsk4"},{"number":"lsk5"}],[{"number":"lsk4"},{"number":"lsk5"}]
+// ,[{"number":"lsk5"}]],"parkTime":0.28166667,"cost":14.0}
         JSONObject carOutInfo = JSON.parseObject(results);
         String exist = carOutInfo.getString("exist");
+        JSONArray parking = carOutInfo.getJSONArray("parking").getJSONArray(carOutInfo.getJSONArray("parking").size()-1);
+        JSONArray shortcut = carOutInfo.getJSONArray("shortcut").getJSONArray(carOutInfo.getJSONArray("shortcut").size()-1);
 
         if (exist==null){
             carOutInfoLabel.setText("停车场此时没有车");
@@ -609,6 +679,21 @@ public class MenuController {
                     + carOutInfo.getString("cost") );
             carParkingControl--;
         }
+        String parkingInfo = "";
+        for (int i = 0; i < parking.size(); i++) {
+            JSONObject vehicle = parking.getJSONObject(i);
+            long time = Long.parseLong(vehicle.getString("arrive_time"));
+            Date date = new Date(time);
+            parkingInfo += "车辆："+vehicle.getString("number")+"于"+String.valueOf(date)+"停入停车场内。\n";
+        }
+        parkingTextArea.setText(parkingInfo);
+
+        String shortcutInfo = "";
+        for (int i = 0; i < shortcut.size(); i++) {
+            JSONObject vehicle = shortcut.getJSONObject(i);
+            shortcutInfo += "车辆："+vehicle.getString("number")+"于比便道内等候。\n";
+        }
+        shortcutTextArea.setText(shortcutInfo);
     }
 
     @FXML
@@ -740,37 +825,44 @@ public class MenuController {
                 String hasToilet = node.getString("hasToilet");
 //                [{"dist":9,"index":0,"time":15},{"dist":22,"index":2,"time":32},
 //                {"dist":7,"index":3,"time":8},{"dist":6,"index":4,"time":7}]
-                String edges = node.getString("edges");
-//                String edgesString = "";
-//                JSONArray edges = node.getJSONArray("edges");
-//                for (int j = 0; j < edges.size(); j++) {
-//                    JSONObject edge = edges.getJSONObject(i);
-//                    String surroundName = nodes.getJSONObject(edge.getInteger("index")).getString("name");
-//                    String surroundDist = edge.getString("dist");
-//                    String surroundTime = edge.getString("time");
-//
-//                    edgesString += surroundName+"，距离："+surroundDist+"，需时间："+surroundTime+"\n";
-//
-//                }
+//                String edges = node.getString("edges");
+                String edgesString = "";
+                JSONArray edges = node.getJSONArray("edges");
+                for (int j = 0; j < edges.size(); j++) {
+                    JSONObject edge = edges.getJSONObject(j);
+                    String surroundName = nodes.getJSONObject(edge.getInteger("index")).getString("name");
+                    String surroundDist = edge.getString("dist");
+                    String surroundTime = edge.getString("time");
 
+                    edgesString += surroundName+"，距离："+surroundDist+"，需时间："+surroundTime+"\n";
 
-
+                }
                 String des = node.getString("des");
+
                 scenicInfo.add(pop);
                 scenicInfo.add(hasRest);
                 scenicInfo.add(hasToilet);
-                scenicInfo.add(edges);
+                scenicInfo.add(edgesString);
                 scenicInfo.add(des);
             }
         }
 //        0 1 2 3 4  5
 //        6 7 8 9 10 11
-
+//        Label [] infoLabels = {scenicNameLabel,popularityLabel, hasRestLabel,
+//                hasToiletLabel, surroundLabel,desLabel};
         Label [] infoLabels = {scenicNameLabel,popularityLabel, hasRestLabel,
-                hasToiletLabel, surroundLabel,desLabel};
+                hasToiletLabel, desLabel};
         for (int i = 6*searchAndSortCount; i <(6*searchAndSortCount+6) ; i++) {
 //            System.out.println(scenicInfo.getData(i));
-            infoLabels[i%6].setText(scenicInfo.getData(i));
+            if (i%6==4){
+                surroundTextArea.setText(scenicInfo.getData(i));
+            }else{
+                if (i%6==5){
+                    desLabel.setText(scenicInfo.getData(i));
+                }else{
+                    infoLabels[i%6].setText(scenicInfo.getData(i));
+                }
+            }
         }
         searchAndSortCount++;
     }
