@@ -36,7 +36,7 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="390.0" prefWidth="810.0">
                      <children>
-                        <JFXTextArea fx:id="scenicSpotsMapTextArea" layoutX="77.0" layoutY="81.0" prefHeight="442.0" prefWidth="691.0" />
+                        <JFXTextArea fx:id="scenicSpotsMapTextArea" layoutX="10.0" layoutY="81.0" prefHeight="442.0" prefWidth="810.0" />
                         <Label fx:id="scenicSpotsMapLabel" layoutX="52.0" layoutY="14.0" prefHeight="50.0" prefWidth="601.0" text="景区分布图：">
                            <font>
                               <Font size="16.0" />

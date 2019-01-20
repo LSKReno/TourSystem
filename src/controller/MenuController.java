@@ -404,9 +404,8 @@ public class MenuController {
              JSONArray edges = node.getJSONArray("edges");
 
              MyList<Integer> edgeList = new MyList<>();
-             System.out.println(edges.size());
+//             System.out.println(edges.size());
              for (int j = 0; j < edges.size(); j++) {
-//                 System.out.println("lsk");
                  edgeList.add(edges.getJSONObject(j).getInteger("index"));
              }
 
@@ -417,8 +416,8 @@ public class MenuController {
                      matrix[j][i] = node.getJSONArray("edges").getJSONObject(index).getInteger("dist");
                  }
                  else{
-                     matrix[i][j] = Constants.INFINITY;
-                     matrix[j][i] = Constants.INFINITY;
+                     matrix[i][j] = 327;
+                     matrix[j][i] = 327;
                  }
              }
          }
@@ -431,10 +430,10 @@ public class MenuController {
          matrixString += "\n";
          for (int i = 0; i < nodes.size(); i++) {
              JSONObject node = nodes.getJSONObject(i);
-             matrixString += node.getString("name")+"\t";
+             matrixString += node.getString("name")+"\t\t";
 
              for (int j = 0; j < nodes.size(); j++) {
-                 matrixString  += String.valueOf(matrix[i][j])+"\t";
+                 matrixString  += String.valueOf(matrix[i][j])+"\t\t";
              }
              matrixString += "\n";
          }
@@ -645,7 +644,8 @@ public class MenuController {
     void carOut(ActionEvent event){
         DeletePark deletePark= new DeletePark();
         String results = deletePark.deletePark(deleteCarNumberText.getText());
-        System.out.println(results);
+//        System.out.println(results);
+
 //        {"exist":true,"length":7,
 // "parking":[
 // [{"arrive_time":1547963931382,"number":"lsk3"},{"arrive_time":1547963929050,"number":"lsk2"},{"arrive_time":1547963926628,"number":"lsk1"}]
@@ -661,8 +661,6 @@ public class MenuController {
 // ,[{"number":"lsk5"}]],"parkTime":0.28166667,"cost":14.0}
         JSONObject carOutInfo = JSON.parseObject(results);
         String exist = carOutInfo.getString("exist");
-        JSONArray parking = carOutInfo.getJSONArray("parking").getJSONArray(carOutInfo.getJSONArray("parking").size()-1);
-        JSONArray shortcut = carOutInfo.getJSONArray("shortcut").getJSONArray(carOutInfo.getJSONArray("shortcut").size()-1);
 
         if (exist==null){
             carOutInfoLabel.setText("停车场此时没有车");
@@ -678,22 +676,26 @@ public class MenuController {
                     +", 停车总费用为："
                     + carOutInfo.getString("cost") );
             carParkingControl--;
-        }
-        String parkingInfo = "";
-        for (int i = 0; i < parking.size(); i++) {
-            JSONObject vehicle = parking.getJSONObject(i);
-            long time = Long.parseLong(vehicle.getString("arrive_time"));
-            Date date = new Date(time);
-            parkingInfo += "车辆："+vehicle.getString("number")+"于"+String.valueOf(date)+"停入停车场内。\n";
-        }
-        parkingTextArea.setText(parkingInfo);
 
-        String shortcutInfo = "";
-        for (int i = 0; i < shortcut.size(); i++) {
-            JSONObject vehicle = shortcut.getJSONObject(i);
-            shortcutInfo += "车辆："+vehicle.getString("number")+"于比便道内等候。\n";
+            JSONArray parking = carOutInfo.getJSONArray("parking").getJSONArray(carOutInfo.getJSONArray("parking").size()-1);
+            JSONArray shortcut = carOutInfo.getJSONArray("shortcut").getJSONArray(carOutInfo.getJSONArray("shortcut").size()-1);
+
+            String parkingInfo = "";
+            for (int i = 0; i < parking.size(); i++) {
+                JSONObject vehicle = parking.getJSONObject(i);
+                long time = Long.parseLong(vehicle.getString("arrive_time"));
+                Date date = new Date(time);
+                parkingInfo += "车辆："+vehicle.getString("number")+"于"+String.valueOf(date)+"停入停车场内。\n";
+            }
+            parkingTextArea.setText(parkingInfo);
+
+            String shortcutInfo = "";
+            for (int i = 0; i < shortcut.size(); i++) {
+                JSONObject vehicle = shortcut.getJSONObject(i);
+                shortcutInfo += "车辆："+vehicle.getString("number")+"于比便道内等候。\n";
+            }
+            shortcutTextArea.setText(shortcutInfo);
         }
-        shortcutTextArea.setText(shortcutInfo);
     }
 
     @FXML
