@@ -230,7 +230,6 @@ public class ShortestPath {
 				break;
 			}
 		}
-		
 		return pos;
 	}
 	

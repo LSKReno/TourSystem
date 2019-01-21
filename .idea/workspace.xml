@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3baaa72c-3fd3-4fc1-bfb5-dc6c1c3c3d7e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" beforeDir="false" afterPath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20175153_软英1701_李思宽.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/20175153_软英1701_李思宽.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScenicGraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/ScenicGraph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/ShortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/ShortestPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/algorithm/TourMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/TourMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructure/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructure/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methods/TourMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/methods/TourMaps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/答辩演示.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/答辩演示.ppt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,13 +21,13 @@
     <session id="148834848">
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2185" />
+          <entry key="JAVA" value="2215" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="107" />
+          <entry key="JAVA" value="111" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="UML" value="4" />
           <entry key="XML" value="5" />
@@ -32,7 +35,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -51,23 +54,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="159">
+              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algorithm/TourMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -108,7 +102,6 @@
         <option value="$PROJECT_DIR$/src/algorithm/Kruskal.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Prim.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Search.java" />
-        <option value="$PROJECT_DIR$/src/algorithm/ShortestPath.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Sort.java" />
         <option value="$PROJECT_DIR$/src/algorithm/TourManager.java" />
         <option value="$PROJECT_DIR$/src/datastructure/Announcement.java" />
@@ -124,7 +117,9 @@
         <option value="$PROJECT_DIR$/src/datastructure/VehicleNode.java" />
         <option value="$PROJECT_DIR$/src/datastructure/VNode.java" />
         <option value="$PROJECT_DIR$/src/datastructure/Vehicle.java" />
+        <option value="$PROJECT_DIR$/src/methods/TourMaps.java" />
         <option value="$PROJECT_DIR$/src/algorithm/TourMap.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/ShortestPath.java" />
       </list>
     </option>
   </component>
@@ -134,7 +129,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1070" />
     <option name="y" value="15" />
     <option name="width" value="980" />
@@ -177,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548073248674" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548078893720" />
     <property name="last_opened_file_path" value="D:/Vehicle Hiring System" />
   </component>
   <component name="RunDashboard">
@@ -323,7 +318,7 @@
       <workItem from="1548030960260" duration="3173000" />
       <workItem from="1548038056179" duration="278000" />
       <workItem from="1548041648845" duration="68000" />
-      <workItem from="1548045015726" duration="9733000" />
+      <workItem from="1548045015726" duration="14763000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -349,7 +344,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38222000" />
+    <option name="totallyTimeSpent" value="43252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -365,7 +360,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.58567417" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4227528" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -400,13 +395,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/lsk.java" />
-    <entry file="file://$PROJECT_DIR$/src/methods/TourMaps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/methods/CreatePark.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -465,19 +453,6 @@
     <entry file="file://$PROJECT_DIR$/parking.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5373#10394#0" />
-            <element signature="e#10400#12776#0" />
-            <element signature="e#13308#16761#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/Parking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -490,13 +465,6 @@
             <element signature="method#generateQueueJSON#0;class#Parking#0" />
             <element signature="method#generateDynamicJSONString#0;class#Parking#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/ShortestPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -829,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/VNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/CreateNewGraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-260">
@@ -867,20 +828,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/datastructure/VNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/TourMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        <state relative-caret-position="59">
+          <caret line="288" column="61" lean-forward="true" selection-start-line="288" selection-start-column="61" selection-end-line="288" selection-end-column="61" />
+          <folding>
+            <element signature="method#bdfsplus#0;class#TourMap#0" />
+            <element signature="method#checkFinal#0;class#TourMap#0" />
+            <element signature="method#clear#0;class#TourMap#0" />
+            <element signature="method#DFS#0;class#TourMap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/methods/TourMaps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="29" column="61" lean-forward="true" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/ShortestPath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="505" column="48" selection-start-line="505" selection-start-column="48" selection-end-line="505" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5352#10377#0" />
+            <element signature="e#10383#12759#0" />
+            <element signature="e#13291#16744#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

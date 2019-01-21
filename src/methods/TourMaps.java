@@ -30,6 +30,7 @@ public class TourMaps {
                 tourIndexList = tourMap.EulerTour(startName);
             else if (selectTourMap.equals("BDFS plus"))
                 tourIndexList = tourMap.bdfsplus(startName,endName);
+
             if(tourIndexList == null){
                 results+="{\"tourList\":[], \"tourCycle\":[], \"pathLength\":-1}";
             }else{

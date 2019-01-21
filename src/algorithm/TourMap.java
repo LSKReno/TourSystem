@@ -71,21 +71,23 @@ public class TourMap {
 			int preNodeIndex ;
 
 			// 如果当前节点为起点
-			if(tourIndexList.size() == 1)
-				preNodeIndex = startIndex;
-				// 如果当前节点不是起点，正常获得preNodeIndex
-			else
-				preNodeIndex = tourIndexList.get(tourIndexList.size()-1);
+			if(tourIndexList.size() == 1) {
+                preNodeIndex = startIndex;
+            }
+			// 如果当前节点不是起点，正常获得preNodeIndex
+			else {
+                preNodeIndex = tourIndexList.get(tourIndexList.size() - 1);
+            }
 			// 已访问
 			visited[arcNodeIndex] = true;
 			MyList<VNode> list = graph.getNodes().getData(arcNodeIndex).getVlist();
-			// 储存下一步待选择的节点经过处理后的权重
+			// 开始储存下一步待选择的节点经过处理后的权重
 			double[] select = new double[list.getSize()];
 			boolean allVisited = true;
 			for (int i = 0; i < list.getSize(); i++) {
 				// 如果该边终点为前面的节点
 				if (list.getData(i).getIndex() == preNodeIndex){
-					// 如果倒数第二个节点和该边终点相等，即有形成死环的可能
+					// 如果倒数第二个节点和该边终点相等，那么可能有形成死环的可能
 					if(tourIndexList.get(tourIndexList.size()-2) == list.getData(i).getIndex() ){
 						select[i] = (1.0/(p*0.001)) *list.getData(i).getDist();
 					}else{
@@ -93,14 +95,13 @@ public class TourMap {
 
 					}
 					allVisited = false;
-
 				}
 				// 该边终点是路线的最终点
 				else if(list.getData(i).getIndex() == endIndex){
 					//只有终点没访问
-					if(checkFinal(endIndex))
-						f = 10000;
-
+					if(checkFinal(endIndex)) {
+                        f = 10000;
+                    }
 					select[i] = (1.0/f) *list.getData(i).getDist();
 					allVisited = false;
 				}
@@ -123,7 +124,8 @@ public class TourMap {
 			// 如果当前节点所连接的边全部已经访问
 			if(allVisited == true){
 				traverseNodes.pop();
-			}else{
+			}
+			else{
 				// 获得乘以权重后最小的边
 				int minIndex = 0;
 				double min = select[0];
@@ -141,7 +143,7 @@ public class TourMap {
 		// 删除刚开始加入的冗余的起点
 		tourIndexList.remove(0);
 
-		// 使用地杰斯特拉算法求最短路径
+		// 使用迪杰斯特拉算法求最短路径
 		ShortestPath shortest = new ShortestPath(graph);
 		String tempStartName = graph.getNodes().getData(tourIndexList.get(tourIndexList.size()-1)).getName();
 		shortest.dijkstra(tempStartName, end);
@@ -228,7 +230,6 @@ public class TourMap {
 			return tourIndexList;
 		}
 
-
 		ShortestPath shortest = new ShortestPath(graph);
 		String tempStartName = graph.getNodes().getData(tourIndexList.get(tourIndexList.size()-1)).getName();
 		shortest.dijkstra(tempStartName, end);
@@ -292,7 +293,8 @@ public class TourMap {
 				return true;
 			}
 			return false;
-		} else {
+		}
+		else {
 			if(judgeEqual(path)){
 				System.out.println("1212");
 			}
@@ -327,14 +329,14 @@ public class TourMap {
 		MyList<ArcNode> list = new MyList<>();
 		MyList<ArcNode> nodes = graph.getNodes();
 
-		// 复制list
+		// 复制 list
 		for(int i = 0; i < nodes.getSize(); i++){
 			list.add(nodes.getData(i).copy());
 		}
 
 		while(flag<tourIndexList.size()) {
 			if(!list.getData(tourIndexList.get(flag)).getVlist().empty()) {
-				count =flag+1;  //定位加入路线图的list的位置
+				count = flag+1;  //定位加入路线图的list的位置
 				findEulerTour(tourIndexList.get(flag), list);//flag用来不断在队列中推进寻找还有边的路径点
 			}
 			flag++;
@@ -385,7 +387,7 @@ public class TourMap {
 		return length;
 	}
 
-	// 生成有 向图
+	// 生成有向图
 	private void initNewGraph(){
 		for(int i=0; i<graph.getArcNum(); i++){
 			ArcNode arcNode = graph.getNodes().getData(i);
