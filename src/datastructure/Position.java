@@ -1,5 +1,9 @@
 package datastructure;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class Position {
 
     private static MyList<Integer> xPos = new MyList<>();

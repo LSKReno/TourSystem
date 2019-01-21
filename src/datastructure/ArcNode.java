@@ -1,5 +1,9 @@
 package datastructure;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class ArcNode {
 	private String name; //景点名称
 	private String des; //景点描述

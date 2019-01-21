@@ -1,12 +1,13 @@
 package algorithm;
 
 import java.io.*;
-import java.lang.reflect.Array;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Scanner;
+
 
 import datastructure.*;
+
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
 
 //该类读取文件中景点和路的所有信息，用来构建图和输出图的信息
 public class CreateNewGraph {

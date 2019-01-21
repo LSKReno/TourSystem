@@ -5,6 +5,10 @@ import java.util.List;
 
 import datastructure.*;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 // 用于得到道路改进的建议方法
 
 public class Kruskal {

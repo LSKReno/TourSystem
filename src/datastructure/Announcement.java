@@ -2,6 +2,10 @@ package datastructure;
 
 import java.util.Date;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class Announcement {
     private String announcement;
     private Date time;

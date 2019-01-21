@@ -1,5 +1,9 @@
 package datastructure;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class AnnouncementContainer {
 
     static MyList<Announcement> announcementList = new MyList<>();

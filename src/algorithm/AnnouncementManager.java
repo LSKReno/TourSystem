@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+import javax.swing.*;
+
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
 
 public class AnnouncementManager {
 
@@ -86,10 +91,6 @@ public class AnnouncementManager {
             bw.write(message);
             bw.newLine();
         }
-
-
         bw.close();
-
-
     }
 }

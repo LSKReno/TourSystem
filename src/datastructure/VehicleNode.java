@@ -1,6 +1,10 @@
 package datastructure;
 
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class VehicleNode {
 	private Vehicle vehicle; //汽车信息
 	private VehicleNode next; //链表中下一个汽车结点的指针

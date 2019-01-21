@@ -6,6 +6,10 @@ import datastructure.Critical;
 import datastructure.Graph;
 import datastructure.ArcNode;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class Search {
     private Graph graph = Critical.getGraph();
 

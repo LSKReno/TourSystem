@@ -1,6 +1,10 @@
 package datastructure;
 
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class MyQueue<T> {
 
 	public class Node{

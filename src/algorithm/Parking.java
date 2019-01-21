@@ -1,5 +1,6 @@
 package algorithm;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -150,7 +151,29 @@ public class Parking {
 
 		return JSONString;
 	}
-	
+
+
+	public void saveParking (String parkingInfo)  throws IOException {
+		File fileOutput = new File("D:\\TourSystem\\TourSystem\\parking.txt");
+		FileOutputStream fos = new FileOutputStream(fileOutput,false);
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
+
+		bw.write(parkingInfo);
+		bw.newLine();
+        bw.close();
+	}
+
+	public void saveShortcut (String shortcutInfo)  throws IOException {
+        File fileOutput = new File("D:\\TourSystem\\TourSystem\\shortcut.txt");
+        FileOutputStream fos = new FileOutputStream(fileOutput,false);
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
+
+        bw.write(shortcutInfo);
+        bw.newLine();
+        bw.close();
+    }
+
+
 	//对栈数据结构中的数据进行json格式化
 	private String generateStackJSON(MyStack<Vehicle> myStack){
 		Vehicle[] vehicles = myStack.getAll();

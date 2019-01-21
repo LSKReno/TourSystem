@@ -2,6 +2,10 @@ package algorithm;
 
 import datastructure.*;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 //寻找两个景点间的最短路径和最短距离
 
 public class ShortestPath {
@@ -53,7 +57,6 @@ public class ShortestPath {
 
 
 	//利用Floyd算法计算两点之间的最短距离
-
 	public void Floyd(String source, String des){
 		sourceIndex = getPos(source);
 		desIndex = getPos(des);
@@ -88,6 +91,12 @@ public class ShortestPath {
 
 		// 获取最短距离
 		dis = distance[sourceIndex];
+        for (int i = 0; i < path.length; i++) {
+            for (int j = 0; j < path.length; j++) {
+                System.out.print(path[i][j]);
+            }
+            System.out.println();
+        }
 
 		// 获取路径
 		int current = sourceIndex;

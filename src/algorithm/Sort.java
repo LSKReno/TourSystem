@@ -7,6 +7,10 @@ import datastructure.Graph;
 import datastructure.ArcNode;
 import datastructure.MyList;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class Sort {
 	private Graph graph;
 	String type = "";

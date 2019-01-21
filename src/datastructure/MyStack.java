@@ -4,6 +4,10 @@ import java.lang.reflect.Array;
 
 import datastructure.Constants;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class MyStack<T> {
 
 	private class Node{

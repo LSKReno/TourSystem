@@ -1,5 +1,9 @@
 package datastructure;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class VData {
 	private int start; //边的起始点位置
 	private int end; //边的终点位置

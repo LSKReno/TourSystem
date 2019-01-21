@@ -2,17 +2,22 @@ package controller;
 
 
 import IO.IO;
+import algorithm.Parking;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.jfoenix.controls.*;
 import datastructure.Constants;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import datastructure.Critical;
 import datastructure.MyList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -26,10 +31,9 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import methods.*;
 
-import javax.swing.*;
 
 /**
- * Created by LSK.Reno on 2018/7/26.
+ * Created by LSK.Reno on 2018/01/14.
  */
 
 
@@ -327,6 +331,42 @@ public class MenuController {
         ObservableList<String> guideRouteList = FXCollections.observableArrayList("Hamilton", "DFS",
                 "Euler", "BDFS plus");
         guideRouteBox.setItems(guideRouteList);
+
+        // 初始化加载停车场和便道
+        try {
+            String filename = "D:\\TourSystem\\TourSystem\\parking.txt";
+            File file = new File(filename);
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String loadParking = "";
+            String temp;
+            while((temp = reader.readLine()) != null) {
+                loadParking += temp+"\n";
+            }
+            reader.close();
+            parkingTextArea.setText(loadParking);
+
+        }
+        catch (Exception e) {
+//            e.printStackTrace();
+        }
+        try {
+            String filename = "D:\\TourSystem\\TourSystem\\shortcut.txt";
+            File file = new File(filename);
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String loadShortcut="";
+            String temp;
+            while((temp = reader.readLine()) != null) {
+                loadShortcut += temp+"\n";
+            }
+            reader.close();
+            shortcutTextArea.setText(loadShortcut);
+
+        }
+        catch (Exception e) {
+//            e.printStackTrace();
+        }
+
+
 
         // 初始化加载公告
         ShowAnnouncement showAnnouncement = new ShowAnnouncement();
@@ -628,12 +668,24 @@ public class MenuController {
                 Date date = new Date(time);
                 parkingInfo += "车辆："+vehicle.getString("number")+"于"+String.valueOf(date)+"停入停车场内。\n";
             }
+            try {
+                Critical.getParking().saveParking(parkingInfo);
+            } catch (IOException e) {
+                System.out.println("car in is nothing wrong.");
+//                e.printStackTrace();
+            }
             parkingTextArea.setText(parkingInfo);
 
             String shortcutInfo = "";
             for (int i = 0; i < shortcut.size(); i++) {
                 JSONObject vehicle = shortcut.getJSONObject(i);
                 shortcutInfo += "车辆："+vehicle.getString("number")+"于比便道内等候。\n";
+            }
+            try {
+                Critical.getParking().saveShortcut(shortcutInfo);
+            } catch (IOException e) {
+                System.out.println("car in is nothing wrong.");
+//                e.printStackTrace();
             }
             shortcutTextArea.setText(shortcutInfo);
         }
@@ -687,12 +739,24 @@ public class MenuController {
                 Date date = new Date(time);
                 parkingInfo += "车辆："+vehicle.getString("number")+"于"+String.valueOf(date)+"停入停车场内。\n";
             }
+            try {
+                Critical.getParking().saveParking(parkingInfo);
+            } catch (IOException e) {
+                System.out.println("car out is nothing wrong.");
+//                e.printStackTrace();
+            }
             parkingTextArea.setText(parkingInfo);
 
             String shortcutInfo = "";
             for (int i = 0; i < shortcut.size(); i++) {
                 JSONObject vehicle = shortcut.getJSONObject(i);
                 shortcutInfo += "车辆："+vehicle.getString("number")+"于比便道内等候。\n";
+            }
+            try {
+                Critical.getParking().saveShortcut(shortcutInfo);
+            } catch (IOException e) {
+                System.out.println("car out is nothing wrong.");
+//                e.printStackTrace();
             }
             shortcutTextArea.setText(shortcutInfo);
         }

@@ -5,6 +5,10 @@ import datastructure.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class Prim
 {
     private Graph graph = Critical.getGraph();

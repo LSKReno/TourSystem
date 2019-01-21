@@ -1,6 +1,10 @@
 package datastructure;
 
 
+/**
+ * Created by LSK.Reno on 2018/01/14.
+ */
+
 public class VNode {
 	private int index; //另一个景点在景点数组中的位置
 	private int dist; //两个景点的距离
