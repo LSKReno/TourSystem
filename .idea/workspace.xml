@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3baaa72c-3fd3-4fc1-bfb5-dc6c1c3c3d7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScenicGraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/ScenicGraph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/ShortestPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/ShortestPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/TourMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/TourMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/methods/TourMaps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/methods/TourMaps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/答辩演示.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/答辩演示.ppt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,11 +29,12 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.31" value="1" />
@@ -47,7 +42,7 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -57,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="520">
+              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,14 +160,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548078893720" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548082997175" />
     <property name="last_opened_file_path" value="D:/Vehicle Hiring System" />
   </component>
   <component name="RunDashboard">
@@ -319,6 +314,7 @@
       <workItem from="1548038056179" duration="278000" />
       <workItem from="1548041648845" duration="68000" />
       <workItem from="1548045015726" duration="14763000" />
+      <workItem from="1548082607521" duration="438000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -344,7 +340,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43252000" />
+    <option name="totallyTimeSpent" value="43690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -437,16 +433,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/methods/ShowParking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/methods/ShowParking.java" />
     <entry file="file://$PROJECT_DIR$/shortcut.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -457,14 +444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="method#Parking#0;class#Parking#0" />
-            <element signature="method#arrivePark#0;class#Parking#0" />
-            <element signature="method#leavePark#0;class#Parking#0" />
-            <element signature="method#generateStackJSON#0;class#Parking#0" />
-            <element signature="method#generateQueueJSON#0;class#Parking#0" />
-            <element signature="method#generateDynamicJSONString#0;class#Parking#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -588,7 +567,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.5192926045016076" x="670.1882175653087" y="1319.6867208421827" />
+          <settings layout="Hierarchic Group" zoom="0.5192926045016076" x="670.0" y="1320.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -628,7 +607,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.5211830535571543" x="638.5" y="605.4999999999999" />
+          <settings layout="Hierarchic Group" zoom="0.5211830535571543" x="639.0" y="605.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -668,7 +647,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.6973262032085561" x="463.0" y="457.50000000000006" />
+          <settings layout="Hierarchic Group" zoom="0.6973262032085561" x="463.0" y="458.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
@@ -682,13 +661,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/StageManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/StageManager.java" />
     <entry file="uml://JAVA/controller">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -702,7 +675,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.9987199024687599" x="405.2901916503904" y="306.4178466796874" />
+          <settings layout="Hierarchic Group" zoom="0.9987199024687599" x="405.0" y="306.0" />
           <SelectedNodes />
           <Categories>
             <Category>Constructors</Category>
@@ -718,9 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="162" column="9" lean-forward="true" selection-start-line="162" selection-start-column="9" selection-end-line="162" selection-end-column="9" />
-          <folding>
-            <element signature="class#Node#0;class#MyList#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,9 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1160">
           <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
-          <folding>
-            <element signature="class#Node#0;class#MyQueue#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-260">
           <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,12 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="288" column="61" lean-forward="true" selection-start-line="288" selection-start-column="61" selection-end-line="288" selection-end-column="61" />
-          <folding>
-            <element signature="method#bdfsplus#0;class#TourMap#0" />
-            <element signature="method#checkFinal#0;class#TourMap#0" />
-            <element signature="method#clear#0;class#TourMap#0" />
-            <element signature="method#DFS#0;class#TourMap#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="25" column="18" lean-forward="true" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="520">
+          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
