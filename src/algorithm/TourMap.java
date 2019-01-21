@@ -37,6 +37,7 @@ public class TourMap {
 		double q = 10;   // 深度优先因子调节
 		double f = 0.001;  // 终点因子调节
 		double x = 0.01;  // 已访问节点因子
+
 		if(startIndex != endIndex){
 			// 使用Dijkstra算法求最短路径
 			ShortestPath shortest = new ShortestPath(graph);
@@ -59,7 +60,7 @@ public class TourMap {
 		tourIndexList.add(startIndex);
 
 		// 设置终点为已访问，其实是伪已访问 ， 按照设计时的思路，f是控制终点因子访问的参数，看似终点不应该设置为已访问。
-		// 这里之所以这样做， 是一个小trick，只要判断最终点的语句在判断节点是否已经访问的前面，就可以成功进入判断终点的语句。
+		// 这里之所以这样做， 是只要判断最终点的语句在判断节点是否已经访问的前面，就可以成功进入判断终点的语句。
 		// 这样的好处是不需要再每次循环中都判断是否只有终点还未访问（当f足够小的时候，最后只会剩下终点没访问）
 
 		// 如果深度优先栈不为空并且还有节点未访问

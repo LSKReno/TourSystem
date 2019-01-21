@@ -9,7 +9,7 @@ import java.util.Date;
 // 汽车的数据结构
 
 public class Vehicle {
-	private String number; //汽车车号
+	private String number; //汽车车牌号
 	private Date arrive_time; //汽车到达时间
 	
 	public Vehicle(String number, Date arrive_time) {
