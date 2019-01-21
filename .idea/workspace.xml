@@ -4,6 +4,10 @@
     <list default="true" id="3baaa72c-3fd3-4fc1-bfb5-dc6c1c3c3d7e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" beforeDir="false" afterPath="$PROJECT_DIR$/20175153_软英1701_李思宽.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScenicGraph.json" beforeDir="false" afterPath="$PROJECT_DIR$/ScenicGraph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/position.txt" beforeDir="false" afterPath="$PROJECT_DIR$/position.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,19 +20,20 @@
     <session id="148834848">
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1757" />
+          <entry key="JAVA" value="1758" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="JAVA" value="30" />
+          <entry key="PLAIN_TEXT" value="14" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.23" value="1" />
@@ -47,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,6 +91,8 @@
         <option value="$PROJECT_DIR$/src/algorithm/ShortestPath.java" />
         <option value="$PROJECT_DIR$/src/algorithm/TourMap.java" />
         <option value="$PROJECT_DIR$/Announcement.txt" />
+        <option value="$PROJECT_DIR$/src/controller/Main.java" />
+        <option value="$PROJECT_DIR$/Info.txt" />
         <option value="$PROJECT_DIR$/src/controller/MenuController.java" />
       </list>
     </option>
@@ -96,7 +103,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="951" />
     <option name="width" value="978" />
     <option name="height" value="1039" />
@@ -132,7 +139,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548032634405" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548035765932" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -274,7 +281,7 @@
       <workItem from="1547983272369" duration="2110000" />
       <workItem from="1547990475963" duration="657000" />
       <workItem from="1547993957885" duration="221000" />
-      <workItem from="1548030960260" duration="1605000" />
+      <workItem from="1548030960260" duration="3173000" />
     </task>
     <task id="LOCAL-00001" summary="Administer Menu update">
       <created>1547458322037</created>
@@ -300,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26575000" />
+    <option name="totallyTimeSpent" value="28143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -316,7 +323,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23314607" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3272472" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -518,32 +525,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Announcement.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="60">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Info.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="24">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="318" column="30" selection-start-line="318" selection-start-column="30" selection-end-line="318" selection-end-column="30" />
+        <state relative-caret-position="513">
+          <caret line="470" lean-forward="true" selection-start-line="470" selection-end-line="470" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#5237#9139#0" />
+            <element signature="e#9145#11521#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

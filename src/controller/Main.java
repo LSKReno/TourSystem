@@ -6,6 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
+//老虎山 朝日峰 20 12
+//老虎山 花卉园 30 15
+//老虎山 北门 12 5
 
 /**
  * Created by LSK.Reno on 2018/01/14.
